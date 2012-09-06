@@ -1,0 +1,208 @@
+/*---------------------------------------------------
+* CSS Horus V0.2 Alpha
+* Copyright 2012, João Firmino
+* http://csshor.us
+* 05/09/2012
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+	@Reset
+	@Basic and Typography
+	@Lists and Links
+	@Image and Button
+	@Misc
+	
+	@Grids ( soon! )	
+---------------------------------------------------*/
+
+
+/* @Reset (by E. Meyers) */
+/*---------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block 
+}
+
+body {
+	line-height:1 
+}
+
+ol, ul {
+	list-style:none 
+}
+
+blockquote, q {
+	quotes:none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0 
+}	
+
+
+/* @Basic and Typography Styles */
+/*---------------------------------------------------*/
+
+
+body {
+	background:#fff;
+	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#666;
+	-webkit-font-smoothing: antialiased; 
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+	color:#333;
+	font-family:"Georgia", "Times New Roman", serif;
+	text-rendering:optimizelegibility
+} 
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+    font-weight:inherit;
+}
+
+h1 { 
+    font-size:42px; 
+	line-height:46px; 
+	margin-bottom:20px
+}
+
+h2 { 
+    font-size:28px; 
+	line-height:32px; 
+	margin-bottom:12px
+}
+
+h3 { 
+     font-size:21px; 
+     line-height:25px; 
+	 margin-bottom:8px 
+}
+
+h4 { 
+     font-size:18px; 
+     line-height:22px; 
+	 margin-bottom:8px
+}
+
+h5 { 
+     font-size: 16px; 
+     line-height:20px;
+	 margin-bottom:4px 
+}
+
+h6 { 
+     font-size:14px; 
+	 line-height:18px
+}
+
+p { 
+     margin: 0 0 20px 0
+}
+
+p img { 
+     margin:0; 
+	 outline:0 
+}
+
+em { 
+     font-style:italic 
+}
+
+strong { 
+     font-weight:bold 
+}
+
+small { 
+     font-size:75% 
+}
+ 
+ 
+/* @Lists and Links */
+/*---------------------------------------------------*/
+
+
+ul, ol { 
+     margin: 0 0 20px 0
+}
+
+ul { 
+     list-style:none outside
+}
+
+ol { 
+     list-style:decimal
+}
+
+li { 
+     line-height:16px; 
+	 margin-bottom:10px 
+}
+
+a, a:visited { 
+     color:#333; 
+	 text-decoration:underline; 
+	 outline:0
+}
+
+a:hover, a:focus { 
+     color:#111;
+	 text-decoration:none 
+}
+ 
+
+/* @Image and Button */
+/*---------------------------------------------------*/
+
+img {
+	 border:0;
+	 vertical-align:middle;
+     -ms-interpolation-mode:bicubic
+}
+
+img.scale {
+	 max-width:100%;
+	 height:auto
+}
+
+/* Buttons coming soon! ;) */
+ 
+/* -----
+ 
+.bt {}
+
+.bt:hover {}
+
+----- */
+
+
+/* @Misc */
+/*---------------------------------------------------*/
+
+.clear {
+  clear:both;
+  display:block
+}
+
+/* Aligns and clearfix soon! ;) */
+
+
+/* @Grids ( soon! ) */
+/*---------------------------------------------------*/
