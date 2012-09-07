@@ -1,0 +1,260 @@
+/*---------------------------------------------------
+* CSS Horus V0.7 Alpha
+* Copyright 2012, João Firmino
+* http://csshor.us
+* 07/09/2012 - Independece day of Brazil ;)
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+    @Basic Styles
+	  #Reset
+	  #Basic and Typography
+	  #Lists and Links
+	  #Image and Button
+	  #Misc
+	
+	@Grids
+	  #1140 grid 
+	  #960 grid
+	  #Tablet (Portrait) 	
+	  #Mobile (Landscape) 
+	  #Mobile (Portrait) 
+---------------------------------------------------*/
+
+/*==================================================*/
+/*==================================================*/
+             /* @Basic Styles */
+/*==================================================*/
+/*==================================================*/
+
+/* #Reset (by E. Meyers) */
+/*---------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
+
+body { line-height:1 }
+
+ol, ul { list-style:none }
+
+blockquote, q { quotes:none }
+
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none }
+
+table { border-collapse:collapse; border-spacing:0 }	
+
+/* #Basic and Typography Styles */
+/*---------------------------------------------------*/
+
+body {
+	background:#fff;
+	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#666;
+	-webkit-font-smoothing: antialiased; 
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+ 
+h1, h2, h3, h4, h5, h6 { color:#333; font-family:"Georgia", "Times New Roman", serif; text-rendering:optimizelegibility } 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight:inherit }
+h1 { font-size:42px; line-height:46px; margin-bottom:20px }
+h2 { font-size:28px; line-height:32px; margin-bottom:12px }
+h3 { font-size:21px; line-height:25px; margin-bottom:8px }
+h4 { font-size:18px; line-height:22px; margin-bottom:8px }
+h5 { font-size: 16px; line-height:20px; margin-bottom:4px }
+h6 { font-size:14px; line-height:18px }
+
+p { margin: 0 0 20px 0 }
+p img { margin:0; outline:0 }
+
+em { font-style:italic }
+strong { font-weight:bold }
+small { font-size:75% }
+
+hr { border:1px solid #ccc; clear:both; margin:20px 0; height:0 } 
+hr.mtop { border:1px solid #ccc; clear:both; margin:0 0 20px 0; height:0 }
+hr.mbottom { border:1px solid #ccc; clear:both; margin:0 0 20px 0; height:0 } 
+hr.clean { border:1px solid #ccc; clear:both; margin:0; height:0 }
+ 
+/* #Lists and Links */
+/*---------------------------------------------------*/
+
+ul, ol { margin: 0 0 20px 0 }
+ul { list-style:none outside }
+ol { list-style:decimal }
+li { line-height:16px; margin-bottom:10px }
+
+a, a:visited { color:#333; text-decoration:underline; outline:0 }
+a:hover, a:focus { color:#111; text-decoration:none }
+
+/* #Image and Button */
+/*---------------------------------------------------*/
+
+img { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic } /* "-ms-interpolation-mode" applies to stretched images only on IE7 */
+img.scale { max-width:100%; height:auto }
+
+/* Buttons coming soon! ;) */
+ 
+/* -----
+ 
+.bt {}
+
+.bt:hover {}
+
+----- */
+
+
+/* #Misc */
+/*---------------------------------------------------*/
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { display:table; content:""; visibility:hidden; width:0; height:0; }
+.clearfix:after { clear:both }
+.clearfix { *zoom:1 }
+.clear { clear:both; display:block }
+
+/* Aligns, wordpress friendly ;) */
+.alignnone { margin:5px 20px 20px 0 }
+.aligncenter { display:block; margin:5px auto }
+.alignright { float:right; margin: 5px 0 20px 20px }
+.alignleft { float: left; margin: 5px 20px 20px 0 }
+
+
+/*==================================================*/
+/*==================================================*/
+                     /* @Grids */
+/*==================================================*/
+/*==================================================*/
+
+/* 1200 grid inspired by (http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345) */
+/* grid measures inspired by (Skeleton - http://getskeleton.com) */
+
+
+/* #1200 grid */
+/*---------------------------------------------------*/
+
+  .wrapper { width:1200px; margin:0 auto; padding:0; position:relative }
+  
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,
+  .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3, .row { 
+  float:left; display:inline; margin:0 10px }
+  
+  .col1 { width:55px }
+  .col2 { width:130px }
+  .col3 { width:205px }
+  .col4 { width:280px }
+  .col5 { width:355px }
+  .col6 { width:430px }
+  .col7 { width:505px }
+  .col8 { width:580px }
+  .col9 { width:655px }
+  .col10 { width:730px }
+  .col11 { width:805px }
+  .col12 { width:880px }
+  .col13 { width:955px }
+  .col14 { width:1030px }
+  .col15 { width:1105px }
+  .col16 { width:1180px }
+  
+  .col1_3 { width:380px }
+  .col2_3 { width:780px }
+  
+  .row { margin:0 0 20px 0 }
+  
+  .first { margin-left:0 }
+  .last { margin-right:0 }
+
+
+/* #960 grid */
+/*---------------------------------------------------*/
+
+@media only screen and (min-width:960px) and (max-width:1199px) {
+	
+  .wrapper { width:960px }
+  
+  .col1 { width:40px }
+  .col2 { width:100px }
+  .col3 { width:160px }
+  .col4 { width:220px }
+  .col5 { width:280px }
+  .col6 { width:340px }
+  .col7 { width:400px }
+  .col8 { width:460px }
+  .col9 { width:520px }
+  .col10 { width:580px }
+  .col11 { width:640px }
+  .col12 { width:700px }
+  .col13 { width:760px }
+  .col14 { width:820px }
+  .col15 { width:880px }
+  .col16 { width:940px }
+  
+  .col1_3 { width:300px }
+  .col2_3 { width:620px }
+
+}
+
+/* #Tablet (Portrait) */
+/*---------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+  .wrapper { width:768px }
+  
+  .col1 { width:28px }
+  .col2 { width:76px }
+  .col3 { width:124px }
+  .col4 { width:172px }
+  .col5 { width:220px }
+  .col6 { width:268px }
+  .col7 { width:316px }
+  .col8 { width:364px }
+  .col9 { width:412px }
+  .col10 { width:460px }
+  .col11 { width:508px }
+  .col12 { width:556px }
+  .col13 { width:604px }
+  .col14 { width:652px }
+  .col15 { width:700px }
+  .col16 { width:748px }
+  
+  .col1_3 { width:236px }
+  .col2_3 { width:492px }
+  
+  .first.last { margin:0 }
+
+}
+
+/* #Mobile (Landscape) */
+/*---------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .wrapper { width:420px }
+  
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,
+  .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 { 
+  width:420px; margin:0 }
+
+}
+
+/* #Mobile (Portrait) */
+/*---------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+  .wrapper { width:300px }
+  
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,
+  .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 { 
+  width:300px; margin:0 }
+
+}
