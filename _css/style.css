@@ -1,0 +1,99 @@
+/*---------------------------------------------------
+* CSS Horus V0.7.2 Alpha
+* Copyright 2012, João Firmino
+* http://csshor.us
+* 08/09/2012
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+    @Layout Styles for Desktop sizes
+---------------------------------------------------*/
+
+body {
+	
+}
+
+/*---------------------------------------------------
+    @Styles for Small Desktop sizes (until 1200)
+---------------------------------------------------*/
+
+@media only screen and (min-width:960px) and (max-width:1199px) {
+	
+  /*	
+  body {
+  
+  }	
+  */
+
+}
+
+/*---------------------------------------------------
+    @Styles for Tablet Portrait
+---------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+  /*	
+  body {
+  
+  }	
+  */
+	
+}
+
+/*---------------------------------------------------
+    @Styles for Mobile Landscape
+---------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  /*	
+  body {
+  
+  }	
+  */	
+	
+}
+
+/*---------------------------------------------------
+    @Styles for Mobile Portrait
+---------------------------------------------------*/
+
+@media only screen and (max-width: 479px) {
+  
+  /*	
+  body {
+  
+  }	
+  */
+  
+}
+
+/*---------------------------------------------------
+    @Assets for retina display and other devices
+---------------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),  
+only screen and (min--moz-device-pixel-ratio: 2),  
+only screen and (-o-min-device-pixel-ratio: 2/1),  
+only screen and (min-device-pixel-ratio: 2) {
+  /*	
+  .logo {
+	  background:url(../_img/logo@2x.png);
+	  background-size:200px 94px;
+  }
+  */
+}
+
+/*---------------------------------------------------
+    @Font-Face
+---------------------------------------------------*/
+
+@font-face {
+	font-family: 'FontName';
+	src: url('FontName.eot'); /* IE9 Compat Modes */
+	src: url('FontName.eot?iefix') format('eot'), /* IE6-IE8 */
+	     url('FontName.woff') format('woff'), /* Modern Browsers */
+	     url('FontName.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('FontName.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

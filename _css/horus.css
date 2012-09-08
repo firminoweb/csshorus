@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7 Alpha
+* CSS Horus V0.7.2 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 07/09/2012 - Independece day of Brazil ;)
+* 08/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -236,7 +236,7 @@ img.scale { max-width:100%; height:auto }
 /* #Mobile (Landscape) */
 /*---------------------------------------------------*/
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width:480px) and (max-width:767px) {
 
   .wrapper { width:420px }
   
@@ -249,7 +249,7 @@ img.scale { max-width:100%; height:auto }
 /* #Mobile (Portrait) */
 /*---------------------------------------------------*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:479px) { /* 767px */
 
   .wrapper { width:300px }
   
