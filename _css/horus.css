@@ -80,9 +80,9 @@ strong { font-weight:bold }
 small { font-size:75% }
 
 hr { border:1px solid #ccc; clear:both; margin:20px 0; height:0 } 
-hr.mtop { border:1px solid #ccc; clear:both; margin:0 0 20px 0; height:0 }
-hr.mbottom { border:1px solid #ccc; clear:both; margin:0 0 20px 0; height:0 } 
-hr.clean { border:1px solid #ccc; clear:both; margin:0; height:0 }
+hr.mtop { margin:20px 0 0 0 }
+hr.mbottom { margin:0 0 20px 0 } 
+hr.clean { margin:0 }
  
 /* #Lists and Links */
 /*---------------------------------------------------*/
