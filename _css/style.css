@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.5 Alpha
+* CSS Horus V0.7.6 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 08/09/2012
+* 09/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -11,6 +11,27 @@
 
 body {
 	
+}
+
+/* Test styles */
+#grid div {
+	margin-bottom:20px;
+	background:#f3f3f3;
+	overflow:hidden
+}
+
+  #grid div.no-bottom {
+	  margin-bottom:0
+  }
+
+#grid p {
+	font-size:11px;
+	line-height:20px;
+	margin:5px
+}
+
+#grid p span {
+	color:#666
 }
 
 /*---------------------------------------------------
@@ -38,8 +59,13 @@ body {
   
   }	
   */
-	
-}
+  
+  #grid p.hide-txt-mob {
+	  font:0/0 a; 
+	  color:transparent;
+	  margin-bottom:25px
+  }
+	  
 
 /*---------------------------------------------------
     @Styles for Mobile Landscape
@@ -72,28 +98,31 @@ body {
 /*---------------------------------------------------
     @Assets for retina display and other devices
 ---------------------------------------------------*/
-
+/*
 @media only screen and (-webkit-min-device-pixel-ratio: 2),  
 only screen and (min--moz-device-pixel-ratio: 2),  
 only screen and (-o-min-device-pixel-ratio: 2/1),  
 only screen and (min-device-pixel-ratio: 2) {
-  /*	
+  	
   .logo {
 	  background:url(../_img/logo@2x.png);
 	  background-size:200px 94px;
   }
-  */
+  
 }
+*/
 
 /*---------------------------------------------------
     @Font-Face
 ---------------------------------------------------*/
 
+ /*
 @font-face {
 	font-family: 'FontName';
-	src: url('FontName.eot'); /* IE9 Compat Modes */
-	src: url('FontName.eot?iefix') format('eot'), /* IE6-IE8 */
-	     url('FontName.woff') format('woff'), /* Modern Browsers */
-	     url('FontName.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('FontName.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('FontName.eot'); /IE9 Compat Modes/
+	src: url('FontName.eot?iefix') format('eot'), /IE6-IE8/
+	     url('FontName.woff') format('woff'), /Modern Browsers/
+	     url('FontName.ttf')  format('truetype'), /Safari, Android, iOS/
+	     url('FontName.svg#svgFontName') format('svg'); /Legacy iOS/
 }
+*/
