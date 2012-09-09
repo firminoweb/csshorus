@@ -1,5 +1,5 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.2 Alpha
+* CSS Horus V0.7.5 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
 * 08/09/2012
@@ -10,7 +10,7 @@
 	  #Reset
 	  #Basic and Typography
 	  #Lists and Links
-	  #Image and Button
+	  #Form and Button
 	  #Misc
 	
 	@Grids
@@ -42,26 +42,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
 
 body { line-height:1 }
-
 ol, ul { list-style:none }
-
 blockquote, q { quotes:none }
-
 blockquote:before, blockquote:after, q:before, q:after { content:''; content:none }
-
 table { border-collapse:collapse; border-spacing:0 }	
 
 /* #Basic and Typography Styles */
 /*---------------------------------------------------*/
 
-body {
-	background:#fff;
-	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color:#666;
-	-webkit-font-smoothing: antialiased; 
-	-webkit-text-size-adjust:100%;
-	-ms-text-size-adjust:100%
-}
+body { background:#fff; font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#333; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%;
+ -ms-text-size-adjust:100% }
+
+/* Fix audio, canvas and video a la Twitter Bootstrap - http://twitter.github.com/bootstrap */
+audio, canvas, video { display:inline-block; *display:inline; *zoom:1 }
  
 h1, h2, h3, h4, h5, h6 { color:#333; font-family:"Georgia", "Times New Roman", serif; text-rendering:optimizelegibility } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight:inherit }
@@ -79,10 +72,25 @@ em { font-style:italic }
 strong { font-weight:bold }
 small { font-size:75% }
 
+blockquote, blockquote p { font-size:18px; line-height:21px; color:#666; font-style:italic }
+blockquote { margin: 0 0 20px; padding:0 20px; border-left: 4px solid #444; }
+blockquote cite { display: block; font-size: 11px; color: #999; }
+blockquote cite:before { content: "\2014 \00A0"; }
+
+abbr[title] { cursor:help; border-bottom:1px dotted #999 }
+
 hr { border:1px solid #ccc; clear:both; margin:20px 0; height:0 } 
 hr.mtop { margin:20px 0 0 0 }
 hr.mbottom { margin:0 0 20px 0 } 
 hr.clean { margin:0 }
+
+code, pre { padding:0 4px 2px; font-size:12px; color:#333; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px }
+code { padding:4px 6px 2px; color:#002d5e; background:#f9f9f9; border:1px solid #ccc }
+
+pre { display:block; padding:10px; margin:0 0 20px; font-size:14px; line-height:18px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap; background:#f5f5f5; border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; box-shadow:#eee 1px 1px 4px; -webkit-box-shadow:#eee 1px 1px 4px; -moz-box-shadow:#eee 1px 1px 4px }
+
+img { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic } /* "-ms-interpolation-mode" applies to stretched images only on IE7 */
+img.scale { max-width:100%; height:auto }
  
 /* #Lists and Links */
 /*---------------------------------------------------*/
@@ -95,64 +103,53 @@ li { line-height:16px; margin-bottom:10px }
 a, a:visited { color:#333; text-decoration:underline; outline:0 }
 a:hover, a:focus { color:#111; text-decoration:none }
 
-/* #Image and Button */
+/* #Form and Button */
 /*---------------------------------------------------*/
 
-img { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic } /* "-ms-interpolation-mode" applies to stretched images only on IE7 */
-img.scale { max-width:100%; height:auto }
+.bt, button, input[type="submit"], input[type="reset"], input[type="button"]  {
+font-size:14px; font-weight:normal; display:inline-block; padding:6px 14px; line-height:20px; color:#666; text-align:center; text-decoration: none; vertical-align: middle; cursor:pointer; background:#f5f5f5; background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background:#f5f5f5 -webkit-linear-gradient(top, #ffffff, #e6e6e6); background:#f5f5f5 -o-linear-gradient(top, #ffffff, #e6e6e6); background:#f5f5f5 linear-gradient(to bottom, #ffffff, #e6e6e6); background:#f5f5f5 -moz-linear-gradient(top, #ffffff, #e6e6e6); border: 1px solid #ccc; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09); box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09) }
 
-.bt, a.bt {
-  font-size:14px;
-  font-weight:normal;
-  display:inline-block;
-  padding:6px 14px;
-  line-height:20px;
-  color:#666;
-  text-align:center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  background:#f5f5f5;
-  background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background:#f5f5f5 -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background:#f5f5f5 -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background:#f5f5f5 linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background:#f5f5f5 -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  border: 1px solid #ccc;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  border-radius:5px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09);
-}
+.bt:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+color:#333; background:#f5f5f5; background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(#ffffff)); background:#f5f5f5 -webkit-linear-gradient(top, #e0e0e0, #ffffff); background:#f5f5f5 -o-linear-gradient(top, #e0e0e0, #ffffff); background:#f5f5f5 linear-gradient(to bottom, #e0e0e0, #ffffff); background:#f5f5f5 -moz-linear-gradient(top, #e0e0e0, #ffffff); border: 1px solid #bbb }
 
-.bt:hover {
-  color:#333;
-  background:#f5f5f5;
-  background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(#ffffff));
-  background:#f5f5f5 -webkit-linear-gradient(top, #e0e0e0, #ffffff);
-  background:#f5f5f5 -o-linear-gradient(top, #e0e0e0, #ffffff);
-  background:#f5f5f5 linear-gradient(to bottom, #e0e0e0, #ffffff);
-  background:#f5f5f5 -moz-linear-gradient(top, #e0e0e0, #ffffff);
-  border: 1px solid #bbb;
-}
+form, fieldset { margin:0 0 20px }
 
+input[type="text"], input[type="password"], input[type="email"], textarea, select { 
+font-size:13px; width:220px; max-width:90%; border:1px solid #ccc; padding:8px 12px; background:#fff; margin:0; outline:none;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:block;margin-bottom:20px }
+	
+select { padding:0 }
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus { 
+border:1px solid #999; color: #999; -moz-box-shadow:0 0 3px rgba(0,0,0,.32); -webkit-box-shadow:0 0 3px rgba(0,0,0,.32); box-shadow:0 0 3px rgba(0,0,0,.32) }
+
+textarea { min-height:80px; resize:none }
+
+label, legend { font-size:13px; font-weight:bold; display:block;  }
+legend { color:#666; font-weight:normal; font-style:italic }
+
+input[type="checkbox"] { display:inline }
+
+label span, legend span { color:#333; font-weight:normal; font-size:12px }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0 }
 
 /* #Misc */
 /*---------------------------------------------------*/
 
 /* Clearfix */
-.clearfix:before, .clearfix:after { display:table; content:""; visibility:hidden; width:0; height:0; }
+.clearfix:before, .clearfix:after { display:table; content:""; width:0; height:0 }
 .clearfix:after { clear:both }
 .clearfix { *zoom:1 }
 .clear { clear:both; display:block }
 
-/* Aligns, wordpress friendly ;) */
+/* Aligns for images, wordpress friendly ;) */
 .alignnone { margin:5px 20px 20px 0 }
 .aligncenter { display:block; margin:5px auto }
 .alignright { float:right; margin: 5px 0 20px 20px }
 .alignleft { float: left; margin: 5px 20px 20px 0 }
+
+.hide { display:none }
+.hide-txt { font:0/0 a; color:transparent }
 
 
 /*==================================================*/
@@ -258,6 +255,8 @@ img.scale { max-width:100%; height:auto }
   
   .first.last { margin:0 }
 
+  .hide-tablet { display:none !important }
+
 }
 
 /* #Mobile (Landscape) */
@@ -270,18 +269,24 @@ img.scale { max-width:100%; height:auto }
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,
   .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 { 
   width:420px; margin:0 }
+  
+  .hide-mobile,
+  .hide-tablet { display:none !important }
 
 }
 
 /* #Mobile (Portrait) */
 /*---------------------------------------------------*/
 
-@media only screen and (max-width:479px) { /* 767px */
+@media only screen and (max-width:479px) {
 
   .wrapper { width:300px }
   
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,
   .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 { 
   width:300px; margin:0 }
+
+  .hide-mobile,
+  .hide-tablet { display:none !important }
 
 }
