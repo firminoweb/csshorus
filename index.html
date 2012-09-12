@@ -47,43 +47,41 @@
 
 	<div class="wrapper">
     
-		<header class="col16">
+		<header class="col16 row"> <!-- header site -->
 			<h1 style="margin-top:20px">CSS Hórus</h1>
-			<h5>Version 0.7.6 alpha</h5>
-			<hr>
+			<p>Version 0.7.6 alpha</p>
+            <hr class="cleanline">
 		</header>
  
-        <section class="row">
-          
-            <div class="col16">
-              <h1>CSS framework for easy and fast development of responsive and mobile websites.</h1>
-            </div> 
-            
-            <hr class="inner-row">
-            
-       </section>      
+        <section class="col16 row" id="intro">
+              <h1>CSS framework for easy and fast development of responsive and mobile websites.</h1>   
+              <hr class="cleanline">    
+        </section>      
         
-        <section class="row">
+        <section class="row" id="grid">
             
-           <div class="col16 row"> 
+           <header class="col16 row"> 
              <h2>Grid</h2>
              <h5>grid system 1200, 960, tablet and mobile for designing adaptive websites.</h5>
-           </div>  
+           </header>  
            
-           <div id="grid">
-
+           <div class="row" id="ex_col16">
               <div class="col16">
                   <p>.col16</p>   
               </div>
+           </div>
            
+           <div class="row" id="ex_col1_col15">   
               <div class="col1">
                   <p class="hide-txt-mob">.col1</p>   
               </div>
               
               <div class="col15">
                   <p>.col15</p>   
-              </div> 
-
+              </div>
+           </div>
+           
+           <div class="row" id="ex_col2_col14">    
               <div class="col2">
                   <p>.col2</p>   
               </div>
@@ -91,7 +89,9 @@
               <div class="col14">
                   <p>.col14</p>   
               </div> 
-
+           </div>
+           
+           <div class="row" id="ex_col3_col13">   
               <div class="col3">
                   <p>.col3</p>   
               </div>
@@ -99,7 +99,9 @@
               <div class="col13">
                   <p>.col13</p>   
               </div> 
-
+           </div>
+           
+           <div class="row" id="ex_col4_col12">   
               <div class="col4">
                   <p>.col4</p>   
               </div>
@@ -107,15 +109,19 @@
               <div class="col12">
                   <p>.col12</p>   
               </div> 
-
+           </div>
+           
+           <div class="row" id="ex_col5_col11">   
               <div class="col5">
                   <p>.col5</p>   
               </div>
               
               <div class="col11">
                   <p>.col11</p>   
-              </div> 
-
+              </div>
+           </div>
+           
+           <div class="row" id="ex_col6_col10">    
               <div class="col6">
                   <p>.col6</p>   
               </div>
@@ -123,7 +129,9 @@
               <div class="col10">
                   <p>.col10</p>   
               </div>
-              
+           </div>
+           
+           <div class="row" id="ex_col7_col9">   
               <div class="col7">
                   <p>.col7</p>   
               </div>
@@ -131,7 +139,9 @@
               <div class="col9">
                   <p>.col9</p>   
               </div>
-              
+           </div>
+           
+           <div class="row" id="ex_col8_col8">   
               <div class="col8">
                   <p>.col8</p>   
               </div>
@@ -139,47 +149,59 @@
               <div class="col8">
                   <p>.col8</p>   
               </div>
-              
+           </div>
+           
+           <div class="row" id="ex_col9_col7">   
               <div class="col9">
                   <p>.col9</p>   
               </div>
               
               <div class="col7">
                   <p>.col7</p>   
-              </div>                                                              
-
+              </div> 
+           </div> 
+           
+           <div class="row" id="ex_col10_col6">                                                                
               <div class="col10">
                   <p>.col10</p>   
               </div>
               
               <div class="col6">
                   <p>.col6</p>   
-              </div> 
- 
-               <div class="col11">
+              </div>
+           </div>
+           
+           <div class="row" id="ex_col11_col5">    
+              <div class="col11">
                   <p>.col11</p>   
               </div>
               
               <div class="col5">
                   <p>.col5</p>   
               </div> 
-
-               <div class="col12">
+           </div> 
+           
+           <div class="row" id="ex_col12_col4">  
+              <div class="col12">
                   <p>.col12</p>   
               </div>
               
               <div class="col4">
                   <p>.col4</p>   
               </div>
-
-               <div class="col13">
+           </div> 
+           
+           <div class="row" id="ex_col13_col3">  
+              <div class="col13">
                   <p>.col13</p>   
               </div>
               
               <div class="col3">
                   <p>.col3</p>   
               </div>
-
+           </div>  
+           
+           <div class="row" id="ex_col14_col2">  
               <div class="col14">
                   <p>.col14</p>   
               </div>
@@ -187,7 +209,9 @@
               <div class="col2">
                   <p>.col2</p>   
               </div>
-
+           </div>
+           
+           <div class="row" id="ex_col15_col1">  
               <div class="col15">
                   <p>.col15</p>   
               </div>
@@ -195,7 +219,9 @@
               <div class="col1">
                   <p class="hide-txt-mob">.col1</p>   
               </div>
-
+           </div>
+           
+           <div class="row" id="ex_col1_3">  
               <div class="col1_3">
                   <p>.col1_3</p>   
               </div>
@@ -206,82 +232,117 @@
               
               <div class="col1_3">
                   <p>.col1_3</p>   
-              </div>              
-
+              </div>
+           </div>
+           
+           <div id="ex_col23_col13">                  
               <div class="col2_3">
                   <p>.col2_3</p>   
               </div> 
               
               <div class="col1_3">
                   <p>.col1_3</p>   
-              </div> 
-              
-                            
-                            
-           </div> 
-           
-           <hr class="inner-row">             
+              </div>
+           </div>                
             
         </section> 
         
-        <section>
+        <section class="row" id="fonts_form">
             
-           <div class="col16 row"> 
+           <header class="col16 row"> 
              <h2>Typography & Form</h2>
              <h5>Basic styles for your content.</h5>
-           </div> 
+           </header> 
            
-           <div class="col1_3">
-              
-              <p>Paragraph with <a href="#" title="Link">link</a> and some <abbr title="abbreviation">abbreviation</abbr>.</p>
-           
-              <h1>&lt;h1&gt;Heading&lt;/h1&gt;</h1>
-              <h2>&lt;h2&gt;Heading&lt;/h2&gt;</h2>
-              <h3>&lt;h3&gt;Heading&lt;/h3&gt;</h3>
-              <h4>&lt;h4&gt;Heading&lt;/h4&gt;</h4>
-              <h5>&lt;h5&gt;Heading&lt;/h5&gt;</h5>
-              <h6>&lt;h6&gt;Heading&lt;/h6&gt;</h6>
-              
+           <div class="row">
+             <div class="col1_3">
+                
+                <p>Paragraph with <a href="#" title="Link">link</a> and some <abbr title="abbreviation">abbreviation</abbr>.</p>
+             
+                <h1>&lt;h1&gt;Heading&lt;/h1&gt;</h1>
+                <h2>&lt;h2&gt;Heading&lt;/h2&gt;</h2>
+                <h3>&lt;h3&gt;Heading&lt;/h3&gt;</h3>
+                <h4>&lt;h4&gt;Heading&lt;/h4&gt;</h4>
+                <h5>&lt;h5&gt;Heading&lt;/h5&gt;</h5>
+                <h6>&lt;h6&gt;Heading&lt;/h6&gt;</h6>
+                
+             </div>
+             
+             <div class="col1_3">
+                 
+                 <blockquote>
+                 <strong>&lt;blockquote&gt;</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <cite>João Firmino</cite>
+                 </blockquote>
+                 
+                 <pre>&lt;pre&gt; &lt;/pre&gt;</pre>
+                 
+                 <pre>&lt;pre&gt; &lt;/pre&gt; <code>&lt;code&gt; &lt;/code&gt;</code></pre>
+                 
+                 <a href="#" title="link button" class="bt">link button</a> <a href="#" title="link button" class="bt">link button</a>
+                 
+             </div>
+             
+             <div class="col1_3">
+                 
+                 <h3>Ordered list</h3>
+                 
+                 <ol>
+                   <li>list item</li>
+                 </ol>
+                 
+                 <h3>Unordered list</h3>
+                 
+                 <ul>
+                   <li>list item</li>
+                 </ul> 
+                 
+                 <h3>Disc list</h3>
+                 
+                 <ul class="disc">
+                   <li>list item</li>
+                 </ul>  
+               
+                 <h3>Circle list</h3>
+                 
+                 <ul class="circle">
+                   <li>list item</li>
+                 </ul>                                           
+                 
+             </div>
            </div>
            
-           <div class="col1_3">
-               
-               <blockquote>
-               <strong>&lt;blockquote&gt;</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <cite>João Firmino</cite>
-               </blockquote>
-               
-               <pre>&lt;pre&gt; &lt;/pre&gt;</pre>
-               
-               <pre>&lt;pre&gt; &lt;/pre&gt; <code>&lt;code&gt; &lt;/code&gt;</code></pre>
-               
-               <a href="#" title="link button" class="bt">link button</a> <a href="#" title="link button" class="bt">link button</a>
-               
-           </div>
-           
-           <div class="col1_3">
-              <form>
-                <fieldset>
-                  
-                  <label>Name</label>
-                  <input type="text">
-                  
-                  <label>E-mail</label>
-                  <input type="text">
-                  
-                  <label>Message</label>
-                  <textarea></textarea>
-                  
-                  <button type="submit">Send</button> <button type="reset">Clear</button>
-                  
-                </fieldset>
-              </form>
+           <div>  
+             <div class="col2_3">
+             
+                <form>
+                  <fieldset>
+                    
+                    <label>Name</label>
+                    <input type="text">
+                    
+                    <label>E-mail</label>
+                    <input type="text">
+                    
+                    <label>Message</label>
+                    <textarea></textarea>
+                    
+                    <button type="submit">Send</button> <button type="reset">Clear</button>
+                    
+                  </fieldset>
+                </form>           
+             
+             </div>
+             
+             <div class="col1_3">
+              asdasdasd
+             </div>
            </div>
            
         </section>          
  
         
         <footer class="col16">
-            <hr>
+            <hr class="mbottom">
             <h6>copyright 2012 - <a href="http://firmino.com.br" title="Firmino Web Developer" target="_blank">João Firmino</a></h6>
             <hr>
         </footer>

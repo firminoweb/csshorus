@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.6 Alpha
+* CSS Horus V0.7.7 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 09/09/2012
+* 11/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -85,7 +85,7 @@ hr { border:1px solid #ccc; clear:both; margin:20px 0; height:0 }
 hr.mtop { margin:20px 0 0 0 }
 hr.mbottom { margin:0 0 20px 0 } 
 hr.inner-row { margin:0 10px }
-hr.clean { margin:0 }
+hr.cleanline { margin:0 }
 
 code, pre { padding:0 4px 2px; font-size:12px; color:#333; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px }
 code { padding:4px 6px 2px; color:#002d5e; background:#f9f9f9; border:1px solid #ccc }
@@ -99,8 +99,10 @@ img.scale { max-width:100%; height:auto }
 /*---------------------------------------------------*/
 
 ul, ol { margin: 0 0 20px 0 }
-ul { list-style:none outside }
-ol { list-style:decimal }
+ul { list-style:none inside }
+ul.disc { list-style-type:disc }
+ul.circle { list-style-type:circle }
+ol { list-style:decimal inside }
 li { line-height:16px; margin-bottom:10px }
 
 a, a:visited { color:#333; text-decoration:underline; outline:0 }

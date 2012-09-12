@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.6 Alpha
+* CSS Horus V0.7.7 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 09/09/2012
+* 11/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -14,15 +14,10 @@ body {
 }
 
 /* Test styles */
-#grid div {
-	margin-bottom:20px;
+#grid div > div {
 	background:#f3f3f3;
 	overflow:hidden
 }
-
-  #grid div.no-bottom {
-	  margin-bottom:0
-  }
 
 #grid p {
 	font-size:11px;
