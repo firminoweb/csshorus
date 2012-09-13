@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.7 Alpha
+* CSS Horus V0.7.8 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 11/09/2012
+* 12/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -62,7 +62,7 @@ h1 { font-size:42px; line-height:46px; margin-bottom:20px }
 h2 { font-size:28px; line-height:32px; margin-bottom:12px }
 h3 { font-size:21px; line-height:25px; margin-bottom:8px }
 h4 { font-size:18px; line-height:22px; margin-bottom:8px }
-h5 { font-size: 16px; line-height:20px; margin-bottom:4px }
+h5 { font-size:16px; line-height:20px; margin-bottom:4px }
 h6 { font-size:14px; line-height:18px }
 
 h1, h2, h3, h4, h5, h6, p { word-wrap:break-word }
@@ -105,22 +105,29 @@ ul.circle { list-style-type:circle }
 ol { list-style:decimal inside }
 li { line-height:16px; margin-bottom:10px }
 
+.breadcrumbs li, .pagination li { font-size:12px; color:#666; display:inline; margin-right:5px }
+.pagination li { display:inline-block }
+
 a, a:visited { color:#333; text-decoration:underline; outline:0 }
 a:hover, a:focus { color:#111; text-decoration:none }
 
 /* #Form and Button */
 /*---------------------------------------------------*/
 
-.bt, button, input[type="submit"], input[type="reset"], input[type="button"]  {
+fieldset { margin:0 0 20px }
+
+.bt, .pagination a, button, input[type="submit"], input[type="reset"], input[type="button"]  {
 font-size:14px; font-weight:normal; display:inline-block; padding:6px 14px; line-height:20px; color:#666; text-align:center; text-decoration: none; vertical-align: middle; cursor:pointer; background:#f5f5f5; background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background:#f5f5f5 -webkit-linear-gradient(top, #ffffff, #e6e6e6); background:#f5f5f5 -o-linear-gradient(top, #ffffff, #e6e6e6); background:#f5f5f5 linear-gradient(to bottom, #ffffff, #e6e6e6); background:#f5f5f5 -moz-linear-gradient(top, #ffffff, #e6e6e6); border: 1px solid #ccc; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09); box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09) }
 
-.bt:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+.bt:hover, .pagination a:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
 color:#333; background:#f5f5f5; background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(#ffffff)); background:#f5f5f5 -webkit-linear-gradient(top, #e0e0e0, #ffffff); background:#f5f5f5 -o-linear-gradient(top, #e0e0e0, #ffffff); background:#f5f5f5 linear-gradient(to bottom, #e0e0e0, #ffffff); background:#f5f5f5 -moz-linear-gradient(top, #e0e0e0, #ffffff); border: 1px solid #bbb }
 
-form, fieldset { margin:0 0 20px }
+.pagination a { font-size:12px; padding:4px 10px }
+.pagination a.b { font-weight:bold }
+.pagination a:hover, .pagination a.active { font-weight:bold; background:#fff }
 
 input[type="text"], input[type="password"], input[type="email"], textarea, select { 
-font-size:13px; width:220px; max-width:90%; border:1px solid #ccc; padding:8px 12px; background:#fff; margin:0; outline:none;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:block;margin-bottom:20px }
+font-size:13px; width:92%; border:1px solid #ccc; padding:8px 12px; background:#fff; margin:0; outline:none;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:block; margin-bottom:10px; -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); box-shadow:inset 0 1px 6px rgba(0, 0, 0, 0.12) }
 	
 select { padding:0 }
 
