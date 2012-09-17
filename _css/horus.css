@@ -1,11 +1,12 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.8 Alpha
+* CSS Horus V0.7.9 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 13/09/2012
+* 16/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
+
     @Basic Styles
 	  #Reset
 	  #Basic and Typography
@@ -18,7 +19,8 @@
 	  #960 grid
 	  #Tablet (Portrait) 	
 	  #Mobile (Landscape) 
-	  #Mobile (Portrait) 
+	  #Mobile (Portrait)
+	   
 ---------------------------------------------------*/
 
 /*==================================================*/
@@ -138,7 +140,6 @@ color:#333; background:#f5f5f5; background:#f5f5f5 -webkit-gradient(linear, 0 0,
 
 .tagcloud a:hover { color:#666 }
 
-
 input[type="text"], input[type="password"], input[type="email"], textarea, select { 
 font-size:13px; width:92%; border:1px solid #ccc; padding:8px 12px; background:#fff; margin:0; outline:none;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:block; margin-bottom:10px; -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); box-shadow:inset 0 1px 6px rgba(0, 0, 0, 0.12) }
 	
@@ -176,6 +177,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0 }
 .hide { display:none }
 .hide-txt { font:0/0 a; color:transparent }
 
+::selection, ::-moz-selection { color:#fff; background:#333 }
 
 /*==================================================*/
 /*==================================================*/
@@ -185,7 +187,6 @@ button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0 }
 
 /* 1200 grid inspired by (http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345) */
 /* grid measures inspired by (Skeleton - http://getskeleton.com) */
-
 
 /* #1200 grid */
 /*---------------------------------------------------*/
@@ -225,7 +226,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0 }
 /* #960 grid */
 /*---------------------------------------------------*/
 
-@media only screen and (min-width:960px) and (max-width:1199px) {
+@media print, screen and (min-width:960px) and (max-width:1199px) {
 	
   .wrapper { width:960px }
   
