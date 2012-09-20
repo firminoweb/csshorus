@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.7.9 Alpha
+* CSS Horus V0.8.0 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 16/09/2012
+* 19/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -15,7 +15,7 @@
 	  #Misc
 	
 	@Grids
-	  #1140 grid 
+	  #1200 grid 
 	  #960 grid
 	  #Tablet (Portrait) 	
 	  #Mobile (Landscape) 
@@ -106,6 +106,8 @@ ul.disc { list-style-type:disc }
 ul.circle { list-style-type:circle }
 ol { list-style:decimal inside }
 li { line-height:16px; margin-bottom:10px }
+
+ul ul, ol ol { margin:10px 0 0 20px }
 
 .breadcrumbs li, .pagination li, .tagcloud li { font-size:12px; color:#666; display:inline; margin-right:5px }
 .tagcloud li { margin-right:0 }

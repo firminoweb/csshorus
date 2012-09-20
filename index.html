@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
     
-    <title>CSS Hórus - v0.7.9 alpha</title>
+    <title>CSS Hórus - v0.8.0 alpha</title>
     
     <!--======= Basic Metas =======-->
 	<meta charset="utf-8">
@@ -250,8 +250,10 @@
         <section class="row" id="fonts_form">
             
            <header class="col16 row"> 
-             <h2>Typography & Form</h2>
-             <h5>Basic styles for your content.</h5>
+             <h2>All Basic Styles</h2>
+             <h5>Basic, Typography,Lists, Links,Form, Button, Misc</h5>
+             
+             <hr class="mtop">
            </header> 
            
            <div class="row">
@@ -287,7 +289,32 @@
              </div>
              
              <div class="col1_3">
-             
+              
+                 <h3>Ordered list</h3>
+                 
+                 <ol>
+                   <li>list item</li>
+                 </ol>
+                 
+                 <h3>Unordered list</h3>
+                 
+                 <ul>
+                   <li>list item</li>
+                 </ul> 
+                 
+                 <h3>Disc list</h3>
+                 
+                 <ul class="disc">
+                   <li>list item</li>
+                 </ul>  
+               
+                 <h3>Circle list</h3>
+                 
+                 <ul class="circle">
+                   <li>list item</li>
+                 </ul>              
+              
+              <!--
                   <form>
                     
                     <label>Name</label>
@@ -301,7 +328,8 @@
                     
                     <button type="submit">Send</button> <button type="reset">Clear</button>
                     
-                 </form>                                             
+                 </form> 
+                -->                                             
                  
              </div>
            </div>
@@ -372,29 +400,31 @@
              
              <div class="col1_3">
 
-                 <h3>Ordered list</h3>
+                 <h3>Ordered sub-list</h3>
                  
                  <ol>
                    <li>list item</li>
+                   <li> list item
+                      <ol>
+                         <li>sub-item</li>
+                         <li>sub-item</li>
+                      </ol>
+                   </li>
+                   <li>list item</li>
                  </ol>
                  
-                 <h3>Unordered list</h3>
+                 <h3>Unordered sub-list</h3>
                  
                  <ul>
                    <li>list item</li>
+                   <li> list item
+                      <ul>
+                         <li>sub-item</li>
+                         <li>sub-item</li>
+                      </ul>
+                   </li>
+                   <li>list item</li>
                  </ul> 
-                 
-                 <h3>Disc list</h3>
-                 
-                 <ul class="disc">
-                   <li>list item</li>
-                 </ul>  
-               
-                 <h3>Circle list</h3>
-                 
-                 <ul class="circle">
-                   <li>list item</li>
-                 </ul>
 
              </div>
            </div>
