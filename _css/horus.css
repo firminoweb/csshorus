@@ -147,6 +147,10 @@ p img {
     margin:0; outline:0
 }
 
+p.first:first-letter {
+	font-size:200%
+}
+
 em { 
     font-style:italic 
 }
@@ -186,6 +190,11 @@ blockquote cite:before {
 abbr[title] { 
     cursor:help; 
 	border-bottom:1px dotted #999 
+}
+
+address {
+	font-size:12px;
+	margin:0 0 20px
 }
 
 hr { 
