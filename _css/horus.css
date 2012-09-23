@@ -1,8 +1,8 @@
 /*---------------------------------------------------
-* CSS Horus V0.8.1 Alpha
+* CSS Horus V0.8.2 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
-* 20/09/2012
+* 23/09/2012
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -11,15 +11,18 @@
 	  #Reset
 	  #Basic and Typography
 	  #Lists and Links
+	  #Table
 	  #Form and Button
-	  #Misc
+	  #Navigation
 	
-	@Grids
+	@Grid
 	  #1200 grid 
 	  #960 grid
 	  #Tablet (Portrait) 	
 	  #Mobile (Landscape) 
 	  #Mobile (Portrait)
+	  
+    @Miscs	  
 	   
 ---------------------------------------------------*/
 
@@ -62,10 +65,11 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content:none 
 }
 
-table { 
+table {
+	background-color:transparent;
     border-collapse:collapse; 
 	border-spacing:0 
-}	
+}  	
 
 /* #Basic and Typography Styles */
 /*---------------------------------------------------*/
@@ -171,6 +175,7 @@ blockquote {
 blockquote cite { 
     display:block; 
 	font-size:11px; 
+	text-align:right;
 	color:#999 
 }
 
@@ -285,21 +290,6 @@ ul ul, ol ol {
 	margin:10px 0 0 20px
 }
 
-.breadcrumbs li, .pagination li, .tagcloud li {
-	font-size:12px; 
-	color:#666; 
-	display:inline; 
-	margin-right:5px
-}
-
-.tagcloud li {
-	margin-right:0
-}
-
-.pagination li, .tagcloud li {
-	display:inline-block
-}
-
 a, a:visited {
 	color:#333;
 	text-decoration:underline;
@@ -310,6 +300,40 @@ a:hover, a:focus {
 	color:#111;
 	text-decoration:none
 }
+
+/* #Table */
+/*---------------------------------------------------*/
+
+.table {
+	width:100%;
+	margin:0 0 20px
+}
+
+caption {
+	font-size:14px;
+	padding:8px;
+	text-align:center;
+	background:#f7f7f7;
+}
+
+.table th, .table td {
+	line-height:18px;
+    padding:8px;
+    text-align:left;
+}
+
+.table th {
+  font-weight:bold
+}
+
+.table td {
+	border-top:1px #ccc solid
+}
+
+  .table.cleanline td {
+	  border-top:0
+  }
+	
 
 /* #Form and Button */
 /*---------------------------------------------------*/
@@ -327,8 +351,7 @@ fieldset { margin:0 0 20px }
 	text-decoration:none; 
 	vertical-align:middle; 
 	cursor:pointer; 
-	background:#f5f5f5; 
-	background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); 
+	background:#f5f5f5;  
 	background:#f5f5f5 -webkit-linear-gradient(top, #ffffff, #e6e6e6); 
 	background:#f5f5f5 -o-linear-gradient(top, #ffffff, #e6e6e6); 
 	background:#f5f5f5 linear-gradient(to bottom, #ffffff, #e6e6e6); 
@@ -345,7 +368,6 @@ fieldset { margin:0 0 20px }
 .bt:hover, .pagination a:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
 	color:#333; 
 	background:#f5f5f5; 
-	background:#f5f5f5 -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(#ffffff)); 
 	background:#f5f5f5 -webkit-linear-gradient(top, #e0e0e0, #ffffff); 
 	background:#f5f5f5 -o-linear-gradient(top, #e0e0e0, #ffffff); 
 	background:#f5f5f5 linear-gradient(to bottom, #e0e0e0, #ffffff); 
@@ -353,55 +375,8 @@ fieldset { margin:0 0 20px }
 	border:1px solid #bbb
 }
 
-.pagination a {
-	font-size:12px; 
-	padding:4px 10px
-}
-
-.pagination a.b {
-	font-weight:bold
-}
-
-.pagination a:hover, .pagination a.active {
-	background:#fff
-}
-
-.tagcloud a {
-	font-style:italic; 
-	vertical-align:middle; 
-	color:#333 
-}
-
-.tagcloud a.f14 {
-	font-size:110%
-}
-
-.tagcloud a.f16 {
-	font-size:130%
-}
-
-.tagcloud a.f18 {
-	font-size:160%
-}
-
-.tagcloud a.f21 {
-	font-size:200%
-}
-
-.tagcloud a.f24 {
-	font-size:240%
-}
-
-.tagcloud a.f28 {
-	font-size:300%
-}
-
-.tagcloud a:hover {
-	color:#666
-}
-
 input, select, textarea {
-	width:94.8%
+	width:93%
 }
 
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
@@ -430,7 +405,18 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 select {
-	padding:0 
+	appearance:button;
+	-moz-appearance:button;
+	-webkit-appearance:button;
+	cursor:context-menu;
+	background:#f5f5f5; 
+	background:#f5f5f5 -webkit-linear-gradient(top, #fafafa, #e5e5e5); 
+	background:#f5f5f5 -o-linear-gradient(top, #fafafa, #e5e5e5);  
+	background:#f5f5f5 linear-gradient(to bottom, #fafafa, #e5e5e5);  
+	background:#f5f5f5 -moz-linear-gradient(top, #fafafa, #e5e5e5);
+	-webkit-box-shadow:none; 
+	-moz-box-shadow:none; 
+	box-shadow:none 	
 }
 
 textarea {
@@ -465,62 +451,69 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding:0
 }
 
-/* #Misc */
+/* #Navigation */
 /*---------------------------------------------------*/
 
-/* Clearfix */
-.clearfix {
-	*zoom:1
+.breadcrumbs li, .pagination li, .tagcloud li {
+	font-size:12px; 
+	color:#666; 
+	display:inline; 
+	margin-right:5px
 }
 
-.clearfix:before, .clearfix:after {
-	display:table;
-	content:"";
-	width:0;
-	height:0
+.pagination li, .tagcloud li {
+	display:inline-block
 }
 
-.clearfix:after {
-	clear:both
+.pagination a {
+	font-size:12px; 
+	padding:4px 10px
 }
 
-.clear {
-	clear:both;
-	display:block
+.pagination a.b {
+	font-weight:bold
 }
 
-/* Aligns for images, wordpress friendly ;) */
-.alignnone {
-	margin:5px 20px 20px 0
+.pagination a:hover, .pagination a.active {
+	background:#fff
 }
 
-.aligncenter {
-	display:block;
-	margin:5px auto
+.tagcloud li {
+	margin-right:0
 }
 
-.alignright {
-	float:right;
-	margin: 5px 0 20px 20px
+.tagcloud a {
+	font-style:italic; 
+	vertical-align:middle; 
+	color:#333 
 }
 
-.alignleft {
-	float:left; 
-	margin: 5px 20px 20px 0
+.tagcloud a.f14 {
+	font-size:110%
 }
 
-.hide {
-	display:none
+.tagcloud a.f16 {
+	font-size:130%
 }
 
-.hide-txt {
-	font:0/0 a; 
-	color:transparent
+.tagcloud a.f18 {
+	font-size:160%
 }
 
-::selection, ::-moz-selection {
-	color:#fff;
-	background:#333
+.tagcloud a.f21 {
+	font-size:200%
+}
+
+.tagcloud a.f24 {
+	font-size:240%
+}
+
+.tagcloud a.f28 {
+	font-size:300%
+}
+
+.tagcloud a:hover {
+	color:#666
 }
 
 /*==================================================*/
@@ -621,7 +614,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
   
   .row {
-	  float:left; 
 	  margin-bottom:20px 
   }
   
@@ -846,4 +838,83 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	  display:none !important 
   }
 
+}
+
+
+/*==================================================*/
+/*==================================================*/
+                     /* @Miscs */
+/*==================================================*/
+/*==================================================*/
+
+/* #Clear and Row Fix */
+/*---------------------------------------------------*/
+
+.wrapper:after {
+	content:""; 
+	display:table;  
+	height:0; 
+	visibility:hidden;
+	clear:both
+}
+
+.clearfix, .row {
+	zoom:1
+}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+	content:"";	
+	display:table;
+	width:0;
+	height:0;
+    visibility:hidden
+}
+
+.clearfix:after, .row:after {
+	font-size:0;
+	clear:both
+}
+
+.clear {
+	clear:both;
+	display:block
+}
+
+/* #Image Aligns (wordpress friendly) */
+/*---------------------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0
+}
+
+.aligncenter {
+	display:block;
+	margin:5px auto
+}
+
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px
+}
+
+.alignleft {
+	float:left; 
+	margin: 5px 20px 20px 0
+}
+
+/* #Others */
+/*---------------------------------------------------*/
+
+.hide {
+	display:none
+}
+
+.hide-txt {
+	font:0/0 a; 
+	color:transparent
+}
+
+::selection, ::-moz-selection {
+	color:#fff;
+	background:#333
 }
