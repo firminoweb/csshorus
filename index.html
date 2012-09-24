@@ -512,24 +512,39 @@
                          
                   <form>
                     
-                    <label>Name</label>
-                    <input type="text">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
                     
-                    <label>E-mail</label>
-                    <input type="text">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
                     
-                    <label>Password</label>
-                    <input type="password">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
                     
-                    <label>Select</label>
-                     <select>
+                    <label for="selector">Select</label>
+                     <select name="selector" id="selector">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
-                     </select>                    
+                     </select>
+                     
+                     <label>
+                        Upload
+                        <div class="labelinputs"><input type="file" name="uploader"></div>
+                     </label>
+                     
+                     <label for="gender">
+                       Gender <br>
+                       <input type="radio" name="gender" value="m"> <span>Male</span>  &nbsp; <input type="radio" name="gender" value="f"> <span>Female</span>
+                     </label> 
+                     
+                     <label for="preferences">
+                       Preferences <br>
+                       <input type="checkbox" name="greenery" value="greenery"> <span>Greenery</span>  &nbsp; <input type="checkbox" name="vegetables" value="vegetables"> <span>Vegetables</span> &nbsp; <input type="checkbox" name="fruits" value="fruits"> <span>Fruits</span> &nbsp; <input type="checkbox" name="grains" value="grains"> <span>Grains</span> &nbsp;
+                     </label>                                          
                     
-                    <label>Message</label>
-                    <textarea></textarea>
+                    <label for="messages">Message</label>
+                    <textarea name="messages" id="messages"></textarea>
                     
                     <button type="submit">Send</button> <button type="reset">Clear</button>
                     

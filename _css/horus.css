@@ -1,5 +1,5 @@
 /*---------------------------------------------------
-* CSS Horus V0.8.2 Alpha
+* CSS Horus V0.8.3 Alpha
 * Copyright 2012, João Firmino
 * http://csshor.us
 * 23/09/2012
@@ -388,7 +388,7 @@ input, select, textarea {
 	width:93%
 }
 
-input[type="text"], input[type="password"], input[type="email"], textarea, select {
+input[type="text"], input[type="password"], input[type="email"], .labelinputs, textarea, select {
 	font-size:13px; 
 	border:1px solid #ccc; 
 	padding:8px; 
@@ -403,6 +403,14 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	-webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); 
 	-moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); 
 	box-shadow:inset 0 1px 6px rgba(0, 0, 0, 0.12) 
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width:15px;
+	height:15px;
+	display:inline;
+    margin: 3px 0 10px;
+	vertical-align:middle
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
@@ -445,10 +453,6 @@ legend {
 	font-style:italic 
 }
 
-input[type="checkbox"] {
-	display:inline
-}
-
 label span, legend span {
 	color:#333;
 	font-weight:normal;
@@ -471,7 +475,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .pagination li, .tagcloud li {
-	display:inline-block
+	display:inline-block;
+	*line-height:28px;
+	*display:inline
 }
 
 .pagination a {
