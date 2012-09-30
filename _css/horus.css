@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.8.4 Alpha
+* CSS Horus V0.8.5 Alpha
 * http://csshor.us
-* 29/09/2012
+* 30/09/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -935,16 +935,32 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .alignright {
 	float:right;
-	margin: 5px 0 20px 20px
+	margin:5px 0 20px 20px
 }
 
 .alignleft {
 	float:left; 
-	margin: 5px 20px 20px 0
+	margin:5px 20px 20px 0
 }
 
 /* #Others */
 /*---------------------------------------------------*/
+
+.margintop {
+	margin:20px 0 0 0
+}
+
+.marginright {
+	margin:0 20px 0 0
+}
+
+.marginbottom {
+	margin:0 0 20px 0
+}
+
+.marginleft {
+	margin:0 0 0 20px
+}
 
 .hide {
 	display:none
