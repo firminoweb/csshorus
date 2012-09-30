@@ -1,8 +1,10 @@
 /*---------------------------------------------------
-* CSS Horus V0.8.3 Alpha
-* Copyright 2012, João Firmino
+* CSS Horus V0.8.4 Alpha
 * http://csshor.us
-* 23/09/2012
+* 29/09/2012
+*
+* Copyright 2012, João Firmino
+* @firminoweb
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -951,9 +953,4 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .hide-txt {
 	font:0/0 a; 
 	color:transparent
-}
-
-::selection, ::-moz-selection {
-	color:#fff;
-	background:#333
 }
