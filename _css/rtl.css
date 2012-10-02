@@ -1,29 +1,29 @@
 /*---------------------------------------------------
-* RTL CSS for Horus V0.8.4 Alpha
-* 29/09/2012
+* RTL CSS for Horus V0.8.6 Alpha
+* 02/10/2012
 *
-* Copyright 2012, John Greenberg
+* Copyright 2012, Yoni Greenberg
 ---------------------------------------------------*/
 
 html, body {
-	direction: rtl;
+	direction:rtl
 }
 
 blockquote cite { 
-    text-align:left;
+    text-align:left
 }
 
 code, pre { 
-	direction: ltr;
-    padding:0 4px 2px; 
+	direction:ltr;
+    padding:0 4px 2px 
 }
 
 code { 
-    padding:4px 6px 2px; 
+    padding:4px 6px 2px;
 }
 
 pre { 
-	padding:10px; 
+	padding:10px;
 }
 
 /* #Lists and Links */
@@ -35,11 +35,11 @@ ul ul, ol ol {
 /* #Table */
 
 .table th, .table td {
-    text-align:right;
+    text-align:right
 }
 
 .table.bordered {
-	border-width:1px 1px 1px 0px;
+	border-width:1px 1px 1px 0
 }
 
 /* #Navigation */
@@ -91,5 +91,5 @@ ul ul, ol ol {
 
 .alignleft {
 	float:left; 
-	margin: 5px 0 20px 20px
+	margin:5px 0 20px 20px
 }

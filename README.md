@@ -4,8 +4,8 @@
 
 * Author:    João Firmino (<http://firmino.com.br>)
 * Date:      7 September, 2012
-* Last mod.: 30 September, 2012
-* Version:   0.8.5 Alpha
+* Last mod.: 2 October, 2012
+* Version:   0.8.6 Alpha
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 * GitHub:    <https://github.com/firminoweb/csshorus>
@@ -24,7 +24,7 @@ Features
 * Optimized for iOS devices (Styles and Retina)
 * Print Friendly
 * Wordpress Friendly
-
+* RTL Style
 
 Usage
 -----
@@ -32,6 +32,8 @@ Usage
 
 Contributors
 ------------
+
+Yoni Greenberg (Haifa, Israel)
 
 
 
