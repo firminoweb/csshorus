@@ -1,0 +1,95 @@
+/*---------------------------------------------------
+* RTL CSS for Horus V0.8.4 Alpha
+* 29/09/2012
+*
+* Copyright 2012, John Greenberg
+---------------------------------------------------*/
+
+html, body {
+	direction: rtl;
+}
+
+blockquote cite { 
+    text-align:left;
+}
+
+code, pre { 
+	direction: ltr;
+    padding:0 4px 2px; 
+}
+
+code { 
+    padding:4px 6px 2px; 
+}
+
+pre { 
+	padding:10px; 
+}
+
+/* #Lists and Links */
+
+ul ul, ol ol {
+	margin:10px 0 0 20px
+}
+
+/* #Table */
+
+.table th, .table td {
+    text-align:right;
+}
+
+.table.bordered {
+	border-width:1px 1px 1px 0px;
+}
+
+/* #Navigation */
+/*---------------------------------------------------*/
+
+.breadcrumbs li, .pagination li, .tagcloud li {
+	margin-left:5px
+}
+
+.tagcloud li {
+	margin-left:0
+}
+
+/*==================================================*/
+/*==================================================*/
+                     /* @Grids */
+/*==================================================*/
+/*==================================================*/
+
+/* 1200 grid inspired by (http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345) */
+/* grid measures inspired by (Skeleton - http://getskeleton.com) */
+
+/* #1200 grid */
+/*---------------------------------------------------*/
+
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 {
+	  float:right; 
+  }
+  
+  .first {
+	  margin-right:0
+  }
+  
+  .last {
+	  margin-left:0
+  }
+
+/* #Image Aligns (wordpress friendly) */
+/*---------------------------------------------------*/
+
+.alignnone {
+	margin:5px 0 20px 20px
+}
+
+.alignright {
+	float:right;
+	margin: 5px 20px 20px 0
+}
+
+.alignleft {
+	float:left; 
+	margin: 5px 0 20px 20px
+}
