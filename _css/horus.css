@@ -190,7 +190,7 @@ blockquote, blockquote p {
 blockquote { 
     margin:0 0 20px; 
 	padding:0 20px; 
-	border-left:4px solid #444 
+	border-left:4px solid #333 
 }
 
 blockquote cite { 
@@ -248,8 +248,8 @@ code, pre {
 
 code { 
     padding:4px 6px 2px; 
-	color:#002d5e; 
-	background:#f9f9f9; 
+	color:#000; 
+	background:#eee; 
 	border:1px solid #ccc 
 }
 
@@ -263,8 +263,8 @@ pre {
 	word-wrap:break-word; 
 	white-space:pre; 
 	white-space:pre-wrap; 
-	background:#f5f5f5; 
-	border:1px solid #ddd; 
+	background:#f6f6f6; 
+	border:1px solid #ccc; 
 	-webkit-border-radius:5px; 
 	-moz-border-radius:5px; 
 	border-radius:5px; 
@@ -323,7 +323,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-	color:#111;
+	color:#000;
 	text-decoration:none
 }
 
@@ -339,7 +339,7 @@ caption {
 	font-size:14px;
 	padding:8px;
 	text-align:center;
-	background:#f7f7f7;
+	background:#f6f6f6;
 }
 
 .table th, .table td {
@@ -387,11 +387,11 @@ fieldset { margin:0 0 20px }
 	text-decoration:none; 
 	vertical-align:middle; 
 	cursor:pointer; 
-	background:#f5f5f5;  
-	background:#f5f5f5 -webkit-linear-gradient(top, #ffffff, #e6e6e6); 
-	background:#f5f5f5 -o-linear-gradient(top, #ffffff, #e6e6e6); 
-	background:#f5f5f5 linear-gradient(to bottom, #ffffff, #e6e6e6); 
-	background:#f5f5f5 -moz-linear-gradient(top, #ffffff, #e6e6e6); 
+	background:#f6f6f6;  
+	background:#f6f6f6 -webkit-linear-gradient(top, #ffffff, #e6e6e6); 
+	background:#f6f6f6 -o-linear-gradient(top, #ffffff, #e6e6e6); 
+	background:#f6f6f6 linear-gradient(to bottom, #ffffff, #e6e6e6); 
+	background:#f6f6f6 -moz-linear-gradient(top, #ffffff, #e6e6e6); 
 	border:1px solid #ccc; 
 	-webkit-border-radius:5px; 
 	-moz-border-radius:5px; 
@@ -403,12 +403,12 @@ fieldset { margin:0 0 20px }
 
 .bt:hover, .pagination a:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
 	color:#333; 
-	background:#f5f5f5; 
-	background:#f5f5f5 -webkit-linear-gradient(top, #e0e0e0, #ffffff); 
-	background:#f5f5f5 -o-linear-gradient(top, #e0e0e0, #ffffff); 
-	background:#f5f5f5 linear-gradient(to bottom, #e0e0e0, #ffffff); 
-	background:#f5f5f5 -moz-linear-gradient(top, #e0e0e0, #ffffff); 
-	border:1px solid #bbb
+	background:#f6f6f6; 
+	background:#f6f6f6 -webkit-linear-gradient(top, #e0e0e0, #ffffff); 
+	background:#f6f6f6 -o-linear-gradient(top, #e0e0e0, #ffffff); 
+	background:#f6f6f6 linear-gradient(to bottom, #e0e0e0, #ffffff); 
+	background:#f6f6f6 -moz-linear-gradient(top, #e0e0e0, #ffffff); 
+	border:1px solid #ccc
 }
 
 .labelinputs, input, select, textarea {
@@ -453,11 +453,11 @@ select {
 	-moz-appearance:button;
 	-webkit-appearance:button;
 	cursor:context-menu;
-	background:#f5f5f5; 
-	background:#f5f5f5 -webkit-linear-gradient(top, #fafafa, #e5e5e5); 
-	background:#f5f5f5 -o-linear-gradient(top, #fafafa, #e5e5e5);  
-	background:#f5f5f5 linear-gradient(to bottom, #fafafa, #e5e5e5);  
-	background:#f5f5f5 -moz-linear-gradient(top, #fafafa, #e5e5e5);
+	background:#f6f6f6; 
+	background:#f6f6f6 -webkit-linear-gradient(top, #fafafa, #e5e5e5); 
+	background:#f6f6f6 -o-linear-gradient(top, #fafafa, #e5e5e5);  
+	background:#f6f6f6 linear-gradient(to bottom, #fafafa, #e5e5e5);  
+	background:#f6f6f6 -moz-linear-gradient(top, #fafafa, #e5e5e5);
 	-webkit-box-shadow:none; 
 	-moz-box-shadow:none; 
 	box-shadow:none 	
