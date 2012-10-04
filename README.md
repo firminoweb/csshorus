@@ -26,6 +26,8 @@ Features
 * Wordpress Friendly
 * RTL Style
 
+* Soon! LESS CSS ;)
+
 Usage
 -----
 
