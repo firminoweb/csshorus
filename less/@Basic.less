@@ -1,0 +1,496 @@
+/*==================================================*/
+/*==================================================*/
+             /* @Basic Styles */
+/*==================================================*/
+/*==================================================*/
+
+/* #Reset (by E. Meyers) */
+/*---------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display:block 
+}
+
+body { 
+    line-height:1 
+}
+
+ol, ul { 
+    list-style:none
+}
+
+blockquote, q { 
+    quotes:none 
+}
+
+blockquote:before, blockquote:after, q:before, q:after { 
+    content:''; 
+	content:none 
+}
+
+table {
+	background-color:transparent;
+    border-collapse:collapse; 
+	border-spacing:0 
+}  	
+
+/* #Basic and Typography Styles */
+/*---------------------------------------------------*/
+
+body { 
+    background:@white; 
+	font:@baseFontSize e('/') @baseLineHeight @sansFontFamily;
+	color:@grayDarker; 
+    .font-smoothing;	
+    .text-size-adjust;
+}
+
+/* Fix audio, canvas and video a la Twitter Bootstrap - http://twitter.github.com/bootstrap */
+audio, canvas, video { 
+    display:inline-block; 
+	*display:inline; 
+	*zoom:1 
+}
+ 
+h1, h2, h3, h4, h5, h6 { 
+    color:@grayDarker; 
+	font-family:@serifFontFamily; 
+	text-rendering:optimizelegibility 
+} 
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+    font-weight:inherit 
+}
+
+h1 { 
+    font-size:42px; 
+	line-height:46px; 
+	margin-bottom:20px 
+}
+
+h2 { 
+    font-size:28px; 
+	line-height:32px; 
+	margin-bottom:12px 
+}
+
+h3 { 
+    font-size:21px; 
+	line-height:25px; 
+	margin-bottom:8px 
+}
+
+h4 { 
+    font-size:18px; 
+	line-height:22px; 
+	margin-bottom:8px 
+}
+
+h5 { 
+    font-size:16px; 
+	line-height:20px; 
+	margin-bottom:4px
+}
+
+h6 { 
+    font-size:14px; 
+	line-height:18px 
+}
+
+h1, h2, h3, h4, h5, h6, p { 
+    word-wrap:break-word 
+}
+
+p { 
+    margin: 0 0 20px 0 
+}
+
+p img { 
+    margin:0; outline:0
+}
+
+p.first:first-letter {
+	font-size:200%
+}
+
+em { 
+    font-style:italic 
+}
+
+strong { 
+    font-weight:bold 
+}
+
+small { 
+    font-size:75% 
+}
+
+sub, sup {
+  font-size:70%;
+  line-height:0;
+  position:relative;
+}
+
+sub {
+	bottom:-2px
+}
+
+sup {
+	top:-3px
+}
+
+blockquote, blockquote p { 
+    font-size:18px; 
+	line-height:21px; 
+	color:@gray; 
+	font-style:italic 
+}
+
+blockquote { 
+    margin:0 0 20px; 
+	padding:0 20px; 
+	.border-left(4px, solid, @grayDarker);
+}
+
+blockquote cite { 
+    display:block; 
+	font-size:@smallerFontSize; 
+	text-align:right;
+	color:@grayLight 
+}
+
+blockquote cite:before { 
+    content: "\2014 \00A0"; 
+}
+
+abbr[title] { 
+    cursor:help; 
+	.border-bottom(1px, dotted, @grayLight);
+}
+
+address {
+	font-size:@smallFontSize;
+	margin:0 0 20px
+}
+
+hr { 
+	.border(1px, solid, @grayLighter);
+	clear:both; 
+	margin:20px 0; 
+	height:0 
+}
+ 
+hr.mtop { 
+    margin:20px 0 0 0 
+}
+
+hr.mbottom { 
+    margin:0 0 20px 0 
+}
+ 
+hr.inner-row { 
+    margin:0 10px 
+}
+
+hr.cleanline { 
+    margin:0 
+}
+
+code, pre { 
+    padding:0 4px 2px; 
+	font-size:@smallFontSize; 
+	color:@grayDarker; 
+	.border-radius;
+}
+
+code { 
+    padding:4px 6px 2px; 
+	color:@black; 
+	background:@graySweet; 
+	.border(1px, solid, @grayLighter); 
+}
+
+pre { 
+    display:block; 
+	padding:10px; 
+	margin:0 0 20px; 
+	font-size:14px; 
+	line-height:18px; 
+	word-break:break-all; 
+	word-wrap:break-word; 
+	white-space:pre; 
+	white-space:pre-wrap; 
+	background:@grayWhite; 
+	.border(1px, solid, @grayLighter); 
+	.border-radius;
+	.box-shadow(@graySweet, 1px 1px 4px); 
+}
+
+img { 
+    border:0; 
+	vertical-align:middle; 
+	-ms-interpolation-mode:bicubic /* "-ms-interpolation-mode" applies to stretched images only on IE7 */
+}
+ 
+img.scale { 
+    max-width:100%; 
+	height:auto 
+}
+ 
+/* #Lists and Links */
+/*---------------------------------------------------*/
+
+ul, ol { 
+    margin: 0 0 20px 0 
+}
+
+ul {
+	list-style:none inside
+}
+
+ul.disc {
+	list-style-type:disc
+}
+
+ul.circle {
+	list-style-type:circle
+}
+
+ol {
+	list-style:decimal inside
+}
+
+li {
+	line-height:16px;
+	margin-bottom:10px 
+}
+
+ul ul, ol ol {
+	margin:10px 0 0 20px
+}
+
+a, a:visited {
+	color:@grayDarker;
+	text-decoration:underline;
+	outline:0
+}
+
+a:hover, a:focus {
+	color:@black;
+	text-decoration:none
+}
+
+/* #Table */
+/*---------------------------------------------------*/
+
+.table {
+	width:100%;
+	margin:0 0 20px
+}
+
+caption {
+	font-size:@baseFontSize;
+	padding:8px;
+	text-align:center;
+	background:@grayWhite;
+}
+
+.table th, .table td {
+	line-height:18px;
+    padding:8px;
+    text-align:left;
+}
+
+.table th {
+  font-weight:bold
+}
+
+.table td {
+	.border-top(1px, solid, @grayLighter);
+}
+
+  .table.cleanline td {
+	  border-top:0
+  }
+  
+.table.bordered {
+	border-width:1px 0 1px 1px;
+	border-style:solid;
+	border-color:@grayLighter
+}
+
+.table.bordered th, .table.bordered td {
+	.border-right(1px, solid, @grayLighter);
+}
+	
+
+/* #Form and Button */
+/*---------------------------------------------------*/
+
+fieldset { margin:0 0 20px }
+
+.bt, .pagination a, button, input[type="submit"], input[type="reset"], input[type="button"]  {
+	font-size:@baseFontSize; 
+	font-weight:normal; 
+	display:inline-block;
+	padding:6px 14px; 
+	line-height:@baseLineHeight; 
+	color:@gray; 
+	text-align:center; 
+	text-decoration:none; 
+	vertical-align:middle; 
+	cursor:pointer; 
+    .gradient(@grayWhite, @white, @gradientSet); 
+	.border(1px, solid, @grayLighter); 
+	.border-radius;
+	.inner-drop-shadow(0 1px 0, rgba(255, 255, 255, 0.4), 0 1px 2px, rgba(0, 0, 0, 0.09));
+}
+
+.bt:hover, .pagination a:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+	color:@grayDarker; 
+    .gradient(@grayWhite, @gradientSetb, @white); 
+	.border(1px, solid, @grayLighter);
+}
+
+.labelinputs, input, select, textarea {
+	width:93%
+}
+
+input[type="text"], input[type="password"], input[type="email"], .labelinputs, textarea, select {
+	font-size:@inputFontSize; 
+	.border(1px, solid, @grayLighter); 
+	padding:8px; 
+	background:@white; 
+	margin:0; 
+	outline:none;
+	.border-radius; 
+	display:block; 
+	margin-bottom:10px; 
+	.inner-shadow(0 1px 6px, rgba(0, 0, 0, 0.12));
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width:15px;
+	height:15px;
+	display:inline;
+    margin: 3px 0 10px;
+	vertical-align:middle
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+	.border(1px, solid, @grayLight); 
+	color:@grayLight;
+	.drop-shadow(0 0 3px, rgba(0,0,0,.32));  
+}
+
+select {
+    .appearance;
+	cursor:context-menu;
+	.gradient(@grayWhite, @iceWhite, @gradientSetc);
+    .box-shadow-none;	
+}
+
+textarea {
+	min-height:80px;
+	resize:none
+}
+
+label, legend {
+	font-size:@inputFontSize; 
+	font-weight:bold; 
+	display:block;
+}
+
+legend {
+	color:@gray; 
+	font-weight:normal; 
+	font-style:italic 
+}
+
+label span, legend span {
+	color:@grayDarker;
+	font-weight:normal;
+	font-size:@smallFontSize;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border:0;
+	padding:0
+}
+
+/* #Navigation */
+/*---------------------------------------------------*/
+
+.breadcrumbs li, .pagination li, .tagcloud li {
+	font-size:@smallFontSize; 
+	color:@gray; 
+	display:inline; 
+	margin-right:5px
+}
+
+.pagination li, .tagcloud li {
+	display:inline-block;
+	*line-height:28px;
+	*display:inline
+}
+
+.pagination a {
+	font-size:@smallFontSize; 
+	padding:4px 10px
+}
+
+.pagination a.b {
+	font-weight:bold
+}
+
+.pagination a:hover, .pagination a.active {
+	background:@white
+}
+
+.tagcloud li {
+	margin-right:0
+}
+
+.tagcloud a {
+	font-style:italic; 
+	vertical-align:middle; 
+	color:@grayDarker 
+}
+
+.tagcloud a.f14 {
+	font-size:110%
+}
+
+.tagcloud a.f16 {
+	font-size:130%
+}
+
+.tagcloud a.f18 {
+	font-size:160%
+}
+
+.tagcloud a.f21 {
+	font-size:200%
+}
+
+.tagcloud a.f24 {
+	font-size:240%
+}
+
+.tagcloud a.f28 {
+	font-size:300%
+}
+
+.tagcloud a:hover {
+	color:@gray
+}

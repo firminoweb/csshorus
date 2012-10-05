@@ -1,34 +1,38 @@
 /*---------------------------------------------------
 * CSS Horus V0.8.7 Alpha
 * http://csshor.us
-* 04/10/2012
+* 03/10/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
 ---------------------------------------------------*/
+
+// Variables
+@import "#Variables.less";
 
 /*---------------------------------------------------
     @Website Styles
 ---------------------------------------------------*/
 
 body {
-	
+	/**/
 }
 
 /* Test styles */
+
 #grid div > div {
-	background:#eee;
-	overflow:hidden;
+	background:@graySweet;
+	overflow:hidden
 }
 
 #grid p {
-	font-size:11px;
-	line-height:20px;
-	margin:5px;
+	font-size:@smallerFontSize;
+	line-height:@baseLineHeight;
+	margin:5px
 }
 
 #grid p span {
-	color:#666;
+	color:@gray
 }
 
 /*---------------------------------------------------
@@ -60,7 +64,7 @@ body {
   #grid p.hide-txt-mob {
 	  font:0/0 a; 
 	  color:transparent;
-	  margin-bottom:25px;
+	  margin-bottom:25px
   }
 	
 }
@@ -140,6 +144,6 @@ only screen and (min-device-pixel-ratio: 2) {
 ---------------------------------------------------*/
 
 ::selection, ::-moz-selection {
-	color:#fff;
-	background:#333;
+	color:@white;
+	background:@grayDarker
 }

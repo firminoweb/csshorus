@@ -1,0 +1,88 @@
+/*==================================================*/
+/*==================================================*/
+                     /* @Miscs */
+/*==================================================*/
+/*==================================================*/
+
+/* #Clear and Row Fix */
+/*---------------------------------------------------*/
+
+.wrapper:after {
+	content:""; 
+	display:table;  
+	height:0; 
+	visibility:hidden;
+	clear:both
+}
+
+.clearfix, .row {
+	zoom:1
+}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+	content:"";	
+	display:table;
+	width:0;
+	height:0;
+    visibility:hidden
+}
+
+.clearfix:after, .row:after {
+	font-size:0;
+	clear:both
+}
+
+.clear {
+	clear:both;
+	display:block
+}
+
+/* #Image Aligns (wordpress friendly) */
+/*---------------------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0
+}
+
+.aligncenter {
+	display:block;
+	margin:5px auto
+}
+
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px
+}
+
+.alignleft {
+	float:left; 
+	margin:5px 20px 20px 0
+}
+
+/* #Others */
+/*---------------------------------------------------*/
+
+.margintop {
+	margin:20px 0 0 0
+}
+
+.marginright {
+	margin:0 20px 0 0
+}
+
+.marginbottom {
+	margin:0 0 20px 0
+}
+
+.marginleft {
+	margin:0 0 0 20px
+}
+
+.hide {
+	display:none
+}
+
+.hide-txt {
+	font:0/0 a; 
+	color:transparent
+}
