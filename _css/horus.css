@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.8.8 Alpha
+* CSS Horus V0.8.9 Alpha
 * http://csshor.us
-* 05/10/2012
+* 08/10/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -198,7 +198,7 @@ blockquote {
 	border-left:4px solid #333; 
 }
 
-blockquote cite { 
+cite, blockquote cite { 
     display:block; 
 	font-size:11px; 
 	text-align:right;
@@ -258,7 +258,7 @@ code {
 	border:1px solid #ccc; 
 }
 
-pre { 
+pre, kbd { 
     display:block; 
 	padding:10px; 
 	margin:0 0 20px; 
@@ -276,6 +276,17 @@ pre {
 	box-shadow:#eee 1px 1px 4px; 
 	-webkit-box-shadow:#eee 1px 1px 4px; 
 	-moz-box-shadow:#eee 1px 1px 4px; 
+}
+
+kbd {
+	font-size:85%;
+	padding:2px 4px;
+	display:inline
+}
+
+mark {
+	color:#fff;
+	background:#333
 }
 
 img { 

@@ -162,7 +162,7 @@ blockquote {
 	.border-left(4px, solid, @grayDarker);
 }
 
-blockquote cite { 
+cite, blockquote cite { 
     display:block; 
 	font-size:@smallerFontSize; 
 	text-align:right;
@@ -220,7 +220,7 @@ code {
 	.border(1px, solid, @grayLighter); 
 }
 
-pre { 
+pre, kbd { 
     display:block; 
 	padding:10px; 
 	margin:0 0 20px; 
@@ -234,6 +234,17 @@ pre {
 	.border(1px, solid, @grayLighter); 
 	.border-radius;
 	.box-shadow(@graySweet, 1px 1px 4px); 
+}
+
+kbd {
+	font-size:85%;
+	padding:2px 4px;
+	display:inline
+}
+
+mark {
+	color:@white;
+	background:@grayDarker
 }
 
 img { 
