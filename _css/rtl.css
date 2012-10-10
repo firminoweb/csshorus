@@ -9,8 +9,23 @@ html, body {
 	direction:rtl;
 }
 
+blockquote {
+    border-left-width:0px;
+    border-right:4px solid #333;
+}
+
 blockquote cite { 
     text-align:left;
+}
+
+cite, blockquote cite {
+    text-align:left;
+}
+.breadcrumbs li, .pagination li, .tagcloud li {
+    unicode-bidi:embed;
+}
+label input[type="radio"], label input[type="checkbox"] , label span{
+    unicode-bidi:embed;
 }
 
 code, pre { 
@@ -29,8 +44,9 @@ pre {
 /* #Lists and Links */
 
 ul ul, ol ol {
-	margin:10px 0 0 20px;
+    margin:10px 20px 0 0;
 }
+
 
 /* #Table */
 
@@ -39,7 +55,7 @@ ul ul, ol ol {
 }
 
 .table.bordered {
-	border-width:1px 1px 1px 0;
+    border-width:1px;
 }
 
 /* #Navigation */
