@@ -532,6 +532,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding:4px 10px;
 }
 
+  nav .pagination a {
+	 font-size:16px;
+     padding:8px 12px;
+  }
+
 .pagination a.b {
 	font-weight:bold;
 }
