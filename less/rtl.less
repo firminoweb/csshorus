@@ -1,8 +1,10 @@
 /*---------------------------------------------------
-* RTL CSS for Horus V0.8.9 Alpha
+* RTL CSS for Horus V0.9.0 Alpha
 * 10/10/2012
 *
-* Copyright 2012, Yoni Greenberg
+* Copyright 2012, Yoni Greenberg (http://github.com/yonihbc)
+*
+* Contribution, Xehrad (http://github.com/xehrad)
 ---------------------------------------------------*/
 
 // Variables
@@ -11,25 +13,27 @@
 html, body {
     direction:rtl
 }
+
 blockquote  { 
-    border-left-width:0px;
-    border-right:4px solid #333;
-    cite {text-align:left;}
-}
-cite {
-   text-align:left;
-}
-code, pre { 
-    direction:ltr;
-    padding:4px 6px 2px 
+    border-left-width:0;
+    .border-right(4px, solid, @grayDarker);
 }
 
-/*code { 
-    padding:4px 6px 2px
-}*/
+cite, blockquote cite {
+    text-align:left;
+}
+
+code, pre { 
+	direction:ltr;
+    padding:0 4px 2px; 
+}
+
+code { 
+    padding:4px 6px 2px;
+}
 
 pre { 
-    padding:10px
+	padding:10px;
 }
 
 /* #Lists and Links */
@@ -45,7 +49,7 @@ ul ul, ol ol {
 }
 
 .table.bordered {
-    border-width:1px 1px 1px 1px
+    border-width:1px
 }
 
 /* #Navigation */

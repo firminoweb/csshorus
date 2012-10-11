@@ -4,14 +4,13 @@
 
 * Author:    João Firmino (<http://firmino.com.br>)
 * Date:      7 September, 2012
-* Last mod.: 8 October, 2012
-* Version:   0.8.9 Alpha
+* Last mod.: 10 October, 2012
+* Version:   0.9.0 Alpha
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 * GitHub:    <https://github.com/firminoweb/csshorus>
 
-
-CSSHórus is a CSS framework for easy and fast development of responsive and mobile websites. It contains 16 grid columns and basic style formats (Resets, Basics, Typography, Lists, Links, Table, Form, Button) for your web project.
+CSSHórus is a CSS framework for easy and fast development of responsive and mobile websites. It contains 16 grid columns and basic style formats (Resets, Basics, Typography, Lists, Links, Table, Form, Button) for your web project, also with RTL and LESS CSS.
 
 Features
 --------
@@ -34,7 +33,5 @@ Usage
 Contributors
 ------------
 
-Yoni Greenberg (Haifa, Israel)
-
-
-
+* Yoni Greenberg | Haifa,Israel (<https://github.com/yonihbc>)
+* Xehrad (<http://github.com/xehrad>)

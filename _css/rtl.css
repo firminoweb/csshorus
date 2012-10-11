@@ -1,8 +1,10 @@
 /*---------------------------------------------------
-* RTL CSS for Horus V0.8.9 Alpha
-* 05/10/2012
+* RTL CSS for Horus V0.9.0 Alpha
+* 10/10/2012
 *
-* Copyright 2012, Yoni Greenberg
+* Copyright 2012, Yoni Greenberg (http://github.com/yonihbc)
+*
+* Contribution, Xehrad (http://github.com/xehrad)
 ---------------------------------------------------*/
 
 html, body {
@@ -10,22 +12,12 @@ html, body {
 }
 
 blockquote {
-    border-left-width:0px;
+    border-left-width:0;
     border-right:4px solid #333;
-}
-
-blockquote cite { 
-    text-align:left;
 }
 
 cite, blockquote cite {
     text-align:left;
-}
-.breadcrumbs li, .pagination li, .tagcloud li {
-    unicode-bidi:embed;
-}
-label input[type="radio"], label input[type="checkbox"] , label span{
-    unicode-bidi:embed;
 }
 
 code, pre { 
@@ -62,7 +54,12 @@ ul ul, ol ol {
 /*---------------------------------------------------*/
 
 .breadcrumbs li, .pagination li, .tagcloud li {
-	margin-left:5px
+	margin-left:5px;
+    unicode-bidi:embed;
+}
+
+label input[type="radio"], label input[type="checkbox"] , label span {
+    unicode-bidi:embed;
 }
 
 .tagcloud li {
@@ -102,7 +99,7 @@ ul ul, ol ol {
 
 .alignright {
 	float:right;
-	margin: 5px 20px 20px 0;
+	margin:5px 20px 20px 0;
 }
 
 .alignleft {
