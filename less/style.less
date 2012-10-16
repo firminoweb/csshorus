@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.0 Alpha
+* CSS Horus V0.9.1 Alpha
 * http://csshor.us
-* 10/10/2012
+* 16/10/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -143,7 +143,17 @@ only screen and (min-device-pixel-ratio: 2) {
     @Selection
 ---------------------------------------------------*/
 
-::selection, ::-moz-selection {
+::selection {
+	color:@white;
+	background:@grayDarker
+}
+
+::-webkit-selection {
+	color:@white;
+	background:@grayDarker
+}
+
+::-moz-selection {
 	color:@white;
 	background:@grayDarker
 }

@@ -47,10 +47,11 @@ table {
 /* #Basic and Typography Styles */
 /*---------------------------------------------------*/
 
-body { 
+html, body { 
     background:@white; 
 	font:@baseFontSize e('/') @baseLineHeight @sansFontFamily;
-	color:@grayDarker; 
+	color:@grayDarker;
+	overflow-y:scroll; 
     .font-smoothing;	
     .text-size-adjust;
 }
@@ -256,6 +257,10 @@ img {
 img.scale { 
     max-width:100%; 
 	height:auto 
+}
+
+svg:not(:root) { 
+    overflow:hidden; /* SVG Fix to IE9 */
 }
  
 /* #Lists and Links */

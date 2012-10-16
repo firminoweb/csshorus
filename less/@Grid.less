@@ -321,3 +321,28 @@
   }
 
 }
+
+/* #Print Fixes */
+/*---------------------------------------------------*/
+
+@media print {
+   
+   * {
+	  background:transparent !important;
+   }
+   	
+   @page {
+	  margin:0.8cm;
+   }	
+   
+   /* Windows bug fix */	
+   p, h2, h3 {   
+      orphans:3; 
+	  widows:3; 
+   }
+  
+  img { 
+      max-width:100% !important; 
+  }
+  
+}

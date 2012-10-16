@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.0 Alpha
+* CSS Horus V0.9.1 Alpha
 * http://csshor.us
-* 10/10/2012
+* 16/10/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -23,8 +23,12 @@
 	  #Tablet (Portrait) 	
 	  #Mobile (Landscape) 
 	  #Mobile (Portrait)
+	  #Print Fixes
 	  
-    @Miscs	  
+    @Miscs
+	  #Clear/Row Fix
+	  #Image Aligns (wordpress friendly)
+	  #Others	  
 	   
 ---------------------------------------------------*/
 
@@ -77,10 +81,11 @@ table {
 /* #Basic and Typography Styles */
 /*---------------------------------------------------*/
 
-body { 
+html, body { 
     background:#fff; 
 	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	color:#333; 
+	overflow-y:scroll;
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
@@ -298,6 +303,10 @@ img {
 img.scale { 
     max-width:100%; 
 	height:auto; 
+}
+
+svg:not(:root) { 
+    overflow:hidden; /* SVG Fix to IE9 */
 }
  
 /* #Lists and Links */
@@ -907,6 +916,30 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 }
 
+/* #Print Fixes */
+/*---------------------------------------------------*/
+
+@media print {
+   
+   * {
+	  background:transparent !important;
+   }
+   	
+   @page {
+	  margin:0.8cm;
+   }	
+   
+   /* Windows bug fix */	
+   p, h2, h3 {   
+      orphans:3; 
+	  widows:3; 
+   }
+  
+  img { 
+      max-width:100% !important; 
+  }
+  
+}
 
 /*==================================================*/
 /*==================================================*/
