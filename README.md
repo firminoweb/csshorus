@@ -34,4 +34,4 @@ Contributors
 ------------
 
 * Yoni Greenberg | Haifa,Israel (<https://github.com/yonihbc>)
-* Mehrad Dehbid (<http://github.com/xehrad>)
+* Mehrad Dehbid | Tehran,Iran (<http://github.com/xehrad>)
