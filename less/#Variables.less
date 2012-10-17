@@ -22,7 +22,6 @@
 
 // Typography
 // -------------------------
-
 @sansFontFamily:        "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       "Georgia", "Times New Roman", serif;
 @mediumFontSize:        16px;
@@ -31,6 +30,18 @@
 @smallerFontSize:       11px;
 @smallFontSize:         12px;
 @baseLineHeight:        20px;
+
+
+// Grid Vars
+// -------------------------
+
+@_colMrg:               10px;
+@_colNum:               16;
+@_WA:                   1200px;       // #1200 grid base
+@_WB:                   960px;        // #960 grid base
+@_WC:                   768px;        // #Tablet base
+@_WD:                   420px;        // #Mobile landscape base
+@_WE:                   300px;        // #Mobile portrait base
 
 
 // Mixins
@@ -119,4 +130,19 @@
 	background: -moz-linear-gradient(top, @startColor, @endColor);
 	background: -ms-linear-gradient(top, @startColor, @endColor);
 	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+
+// Column Width Calculator
+// -------------------------
+// Contribution, Mehrad Dehbid (http://github.com/xehrad)
+
+.CWC (@_Mid,@_i) {              
+    @_2CM:@_colMrg * 2;
+    @_BW:@_Mid/@_colNum - @_2CM;
+    width:(@_i*@_BW) + (@_i - 1) * @_2CM;
+}
+
+.3CWC (@_Mid,@_i) {
+    width:(@_i*@_Mid/3) - (@_colMrg*2);
 }
