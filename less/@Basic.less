@@ -262,6 +262,26 @@ img.scale {
 svg:not(:root) { 
     overflow:hidden; /* SVG Fix to IE9 */
 }
+
+figure {
+	width:1px;
+	display:table;
+	.border-bottom(1px, dotted, @grayLighter);
+}
+
+figure img {
+	padding:4px;
+	background:@iceWhite;
+	.border(1px, dotted, @grayLighter);
+}
+
+figure figcaption {
+	font-size:80%;
+	font-style:italic;
+	color:@grayLight;		
+	line-height:@baseFontSize;
+	margin:8px 0;
+}
  
 /* #Lists and Links */
 /*---------------------------------------------------*/

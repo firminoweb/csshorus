@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.1 Alpha
+* CSS Horus V0.9.2 Alpha
 * http://csshor.us
-* 16/10/2012
+* 18/10/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -307,6 +307,27 @@ img.scale {
 
 svg:not(:root) { 
     overflow:hidden; /* SVG Fix to IE9 */
+}
+
+figure {
+	width:1px;
+	display:table;
+	border-bottom:1px #ccc dotted;
+}
+
+figure img {
+	padding:4px;
+	background:#fafafa;
+	border:1px #ccc solid;
+}
+
+figure figcaption {
+	font-size:80%;
+	font-style:italic;
+	color:#999;		
+	line-height:14px;
+	margin:8px 0;
+
 }
  
 /* #Lists and Links */
