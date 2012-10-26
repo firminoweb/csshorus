@@ -81,7 +81,7 @@ table {
 /* #Basic and Typography Styles */
 /*---------------------------------------------------*/
 
-html, body { 
+body { 
     background:#fff; 
 	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	color:#333; 
