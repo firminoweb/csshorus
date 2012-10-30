@@ -4,8 +4,8 @@
 
 * Author:    João Firmino (<http://firmino.com.br>)
 * Date:      7 September, 2012
-* Last mod.: 18 October, 2012
-* Version:   0.9.2 Alpha
+* Last mod.: 30 October, 2012
+* Version:   0.9.3 Alpha
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 * GitHub:    <https://github.com/firminoweb/csshorus>

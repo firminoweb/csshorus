@@ -56,11 +56,15 @@ body {
     .text-size-adjust;
 }
 
-/* Fix audio, canvas and video a la Twitter Bootstrap - http://twitter.github.com/bootstrap */
 audio, canvas, video { 
     display:inline-block; 
 	*display:inline; 
 	*zoom:1 
+}
+
+audio:not([controls]) {
+    display:none;
+    height:0;
 }
  
 h1, h2, h3, h4, h5, h6 { 

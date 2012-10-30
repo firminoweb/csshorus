@@ -328,11 +328,14 @@
 @media print {
    
    * {
+      color:@black !important; /* Black prints faster: h5bp.com/s */
 	  background:transparent !important;
+      box-shadow:none !important;
+      text-shadow:none !important;
    }
    	
    @page {
-	  margin:0.8cm;
+	  margin:0.6cm;
    }	
    
    /* Windows bug fix */	
@@ -340,6 +343,19 @@
       orphans:3; 
 	  widows:3; 
    }
+   
+   h2, h3 {
+      page-break-after:avoid;
+   }
+   
+   thead {
+      display:table-header-group; /* h5bp.com/t */
+   }
+
+   tr,
+   img {
+      page-break-inside: avoid;
+   }      
   
   img { 
       max-width:100% !important; 
