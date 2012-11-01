@@ -443,6 +443,7 @@ fieldset { margin:0 0 20px; }
 	background:-moz-linear-gradient(top, #ffffff, #e6e6e6);
 	background:-ms-linear-gradient(top, #ffffff, #e6e6e6);
 	background:-o-linear-gradient(top, #ffffff, #e6e6e6); 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#e6e6e6)');
 	border:1px solid #ccc; 
 	-webkit-border-radius:5px; 
 	-moz-border-radius:5px; 
@@ -460,6 +461,7 @@ fieldset { margin:0 0 20px; }
 	background:-moz-linear-gradient(top, #e0e0e0, #ffffff);
 	background:-ms-linear-gradient(top, #e0e0e0, #ffffff);
 	background:-o-linear-gradient(top, #e0e0e0, #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e0e0e0', endColorstr='#ffffff)');
 	border:1px solid #ccc;
 }
 
@@ -489,6 +491,7 @@ input[type="radio"], input[type="checkbox"] {
 	height:15px;
 	display:inline;
     margin: 3px 0 10px;
+	*margin-bottom:0;
 	vertical-align:middle;
 }
 
