@@ -372,7 +372,11 @@ caption {
 .table.bordered th, .table.bordered td {
 	.border-right(1px, solid, @grayLighter);
 }
-	
+
+.striped tbody tr:nth-child(odd) td,
+.striped tbody tr:nth-child(odd) th {
+	background:@grayWhite
+}	
 
 /* #Form and Button */
 /*---------------------------------------------------*/

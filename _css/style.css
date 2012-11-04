@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.3 Alpha
+* CSS Horus V0.9.5 Alpha
 * http://csshor.us
-* 30/10/2012
+* 04/11/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -30,6 +30,14 @@ body {
 #grid p span {
 	color:#666;
 }
+
+#innerpad p {
+	font-size:14px;
+	color:#fff;
+	margin:0;
+	background:#999
+}
+
 
 /*---------------------------------------------------
     @Styles for Small Desktop sizes (until 1200)

@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.3 Alpha
+* CSS Horus V0.9.5 Alpha
 * http://csshor.us
-* 30/10/2012
+* 04/11/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -28,6 +28,7 @@
     @Miscs
 	  #Clear/Row Fix
 	  #Image Aligns (wordpress friendly)
+	  #Inner Padding
 	  #Others	  
 	   
 ---------------------------------------------------*/
@@ -419,6 +420,11 @@ caption {
 .table.bordered th, .table.bordered td {
 	border-right:1px #ccc solid;
 }
+
+.striped tbody tr:nth-child(odd) td,
+.striped tbody tr:nth-child(odd) th {
+	background:#f6f6f6
+}
 	
 
 /* #Form and Button */
@@ -440,7 +446,7 @@ fieldset { margin:0 0 20px; }
 	background-color:#f6f6f6;
 	background:linear-gradient(to bottom, #ffffff, #e6e6e6);
 	background:-webkit-linear-gradient(top, #ffffff, #e6e6e6);
-	background:-moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background:-moz-linear-gradient(center 1px, #ffffff, #e6e6e6);
 	background:-ms-linear-gradient(top, #ffffff, #e6e6e6);
 	background:-o-linear-gradient(top, #ffffff, #e6e6e6); 
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#e6e6e6)');
@@ -458,7 +464,7 @@ fieldset { margin:0 0 20px; }
 	background-color:#f6f6f6;
 	background:linear-gradient(to bottom, #e0e0e0, #ffffff);
 	background:-webkit-linear-gradient(top, #e0e0e0, #ffffff);
-	background:-moz-linear-gradient(top, #e0e0e0, #ffffff);
+	background:-moz-linear-gradient(center 1px, #e0e0e0, #ffffff);
 	background:-ms-linear-gradient(top, #e0e0e0, #ffffff);
 	background:-o-linear-gradient(top, #e0e0e0, #ffffff);
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e0e0e0', endColorstr='#ffffff)');
@@ -512,7 +518,7 @@ select {
 	background-color:#f6f6f6;
 	background:linear-gradient(to bottom, #fafafa, #e5e5e5);
 	background:-webkit-linear-gradient(top, #fafafa, #e5e5e5);
-	background:-moz-linear-gradient(top, #fafafa, #e5e5e5);
+	background:-moz-linear-gradient(center 1px, #fafafa, #e5e5e5);
 	background:-ms-linear-gradient(top, #fafafa, #e5e5e5);
 	background:-o-linear-gradient(top, #fafafa, #e5e5e5);
 	-webkit-box-shadow:none; 
@@ -1044,6 +1050,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .alignleft {
 	float:left; 
 	margin:5px 20px 20px 0;
+}
+
+/* #Inner Padding */
+/*---------------------------------------------------*/
+
+.innerpad {
+	display:block
+}
+
+.innerpad.pd10 {
+	padding:10px
+}
+
+.innerpad.pd20 {
+	padding:20px
 }
 
 /* #Others */
