@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.5 Alpha
+* CSS Horus V0.9.6 Alpha
 * http://csshor.us
-* 04/11/2012
+* 19/11/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -161,7 +161,8 @@ p {
 }
 
 p img { 
-    margin:0; outline:0;
+    margin:0; 
+	outline:0;
 }
 
 p.first:first-letter {
@@ -548,7 +549,7 @@ legend {
 	color:#666; 
 	font-weight:normal; 
 	font-style:italic; 
-	padding-right:10px
+	padding-right:10px;
 }
 
 label span, legend span {
@@ -560,6 +561,17 @@ label span, legend span {
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border:0;
 	padding:0;
+}
+
+.search input {
+	width:52%;
+	display:inline;
+	margin-bottom:0;
+	vertical-align:top;
+}
+
+.search button, .search input[type="submit"] {
+	width:34%;
 }
 
 /* #Navigation */
