@@ -4,8 +4,8 @@
 
 * Author:    João Firmino (<http://firmino.com.br>)
 * Date:      7 September, 2012
-* Last mod.: 19 November, 2012
-* Version:   0.9.6 Alpha
+* Last mod.: 25 November, 2012
+* Version:   0.9.7 Alpha
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 * GitHub:    <https://github.com/firminoweb/csshorus>
@@ -22,12 +22,19 @@ Features
 * Has been tested across as many mobile devices (iPhone, iPad, Android, BlackBerry, Windows Phone)
 * Optimized for iOS devices (Styles and Retina)
 * Print Friendly
-* Wordpress Friendly
+* Optimized for Blogs (figure with caption, search, flexible videos)
 * RTL Style
 * Build with LESS CSS
 
 Usage
 -----
+* Presentation <http://csshor.us>
+* Basics <http://csshor.us/basics>
+* Form <http://csshor.us/form>
+* Table <http://csshor.us/table>
+* Post <http://csshor.us/post>
+* Grid <http://csshor.us/grid>
+
 
 
 Contributors

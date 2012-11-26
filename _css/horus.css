@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.6 Alpha
+* CSS Horus V0.9.7 Alpha
 * http://csshor.us
-* 19/11/2012
+* 25/11/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -28,6 +28,7 @@
     @Miscs
 	  #Clear/Row Fix
 	  #Image Aligns (wordpress friendly)
+	  #Video Wrapper
 	  #Inner Padding
 	  #Others	  
 	   
@@ -105,6 +106,11 @@ audio, canvas, video {
 audio:not([controls]) {
     display:none;
     height:0;
+}
+
+video {
+  width:100%;
+  height:auto;
 }
  
 h1, h2, h3, h4, h5, h6 { 
@@ -572,6 +578,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .search button, .search input[type="submit"] {
 	width:34%;
+	margin:0;
 }
 
 /* #Navigation */
@@ -1071,6 +1078,24 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .alignleft {
 	float:left; 
 	margin:5px 20px 20px 0;
+}
+
+/* #Video Wrapper (flexible youtube, vimeo and other videos) */
+/*---------------------------------------------------*/
+
+.video {
+    height:0;
+	padding-bottom:56.25%;
+	padding-top:25px;
+	position:relative;
+}
+
+.video iframe, .video object, .video embed {
+	width:100%;
+	height:100%;	
+	position:absolute;
+	top:0;
+	left:0;
 }
 
 /* #Inner Padding */
