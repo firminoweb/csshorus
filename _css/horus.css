@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V0.9.7 Alpha
+* CSS Horus V1.0.0
 * http://csshor.us
-* 25/11/2012
+* Last mod: 06/01/2013
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -29,6 +29,7 @@
 	  #Clear/Row Fix
 	  #Image Aligns (wordpress friendly)
 	  #Video Wrapper
+	  #Facebook Comments Plug-in
 	  #Inner Padding
 	  #Others	  
 	   
@@ -1072,12 +1073,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .alignright {
 	float:right;
-	margin:5px 0 20px 20px;
+	margin:5px 0 0 20px;
 }
 
 .alignleft {
 	float:left; 
-	margin:5px 20px 20px 0;
+	margin:5px 20px 0 0;
 }
 
 /* #Video Wrapper (flexible youtube, vimeo and other videos) */
@@ -1096,6 +1097,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position:absolute;
 	top:0;
 	left:0;
+}
+
+/* #Facebook Comments Plug-in */
+/*---------------------------------------------------*/
+
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe { 
+     width:99% !important;
 }
 
 /* #Inner Padding */
