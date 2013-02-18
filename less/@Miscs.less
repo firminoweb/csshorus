@@ -62,14 +62,14 @@
 /* #Video Wrapper (flexible youtube, vimeo and other videos) */
 /*---------------------------------------------------*/
 
-.video {
+.videoWrap {
     height:0;
 	padding-bottom:56.25%;
 	padding-top:25px;
 	position:relative;
 }
 
-.video iframe, .video object, .video embed {
+.videoWrap iframe, .videoWrap object, .videoWrap embed {
 	width:100%;
 	height:100%;	
 	position:absolute;
@@ -77,25 +77,18 @@
 	left:0;
 }
 
-/* #Facebook Comments Plug-in */
-/*---------------------------------------------------*/
-
-.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe { 
-     width:99% !important;
-}
-
 /* #Inner Padding */
 /*---------------------------------------------------*/
 
-.innerpad {
+.pd10, .pd20 {
 	display:block
 }
 
-.innerpad.pd10 {
+.pd10 {
 	padding:10px
 }
 
-.innerpad.pd20 {
+.pd20 {
 	padding:20px
 }
 
@@ -118,11 +111,10 @@
 	margin:0 0 0 20px
 }
 
-.hide {
-	display:none
+.hidden {
+    display:none !important;
 }
 
-.hide-txt {
-	font:0/0 a; 
-	color:transparent
+.hidden-text {
+	font:0/0 a !important; 
 }
