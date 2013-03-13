@@ -87,7 +87,6 @@ body {
     background:#fff; 
 	font:14px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	color:#333; 
-	font-smoothing:antialiased;	
 	-webkit-font-smoothing:antialiased;
 	-ms-font-smoothing:antialiased;
 	-webkit-text-size-adjust:100%;
@@ -96,8 +95,6 @@ body {
 
 audio, canvas, video { 
     display:inline-block; 
-	*display:inline; 
-	*zoom:1; 
 }
 
 audio:not([controls]) {
@@ -160,7 +157,6 @@ p {
 
 p img { 
     margin:0; 
-	outline:0;
 }
 
 p.first:first-letter {
@@ -1082,19 +1078,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /*---------------------------------------------------*/
 
 .margintop {
-	margin:20px 0 0 0;
+	margin-top:20px;
 }
 
 .marginright {
-	margin:0 20px 0 0;
+	margin-right:20px;
 }
 
 .marginbottom {
-	margin:0 0 20px 0;
+	margin-bottom:20px;
 }
 
 .marginleft {
-	margin:0 0 0 20px;
+	margin-left:20px;
 }
 
 .hidden {
