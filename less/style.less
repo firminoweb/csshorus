@@ -1,7 +1,7 @@
 /*---------------------------------------------------
-* CSS Horus V1.0.1
+* CSS Horus V1.0.2
 * http://csshor.us
-* Last mod: 25/11/2012
+* Last mod: 25/03/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
@@ -14,9 +14,7 @@
     @Website Styles
 ---------------------------------------------------*/
 
-body {
-	
-}
+body {}
 
 /* Test styles */
 
@@ -25,50 +23,23 @@ body {
 	overflow:hidden
 }
 
-#grid p {
+#grid span {
 	font-size:@smallerFontSize;
-	line-height:@baseLineHeight;
-	margin:5px
-}
-
-#grid p span {
-	color:@gray
-}
-
-#innerpad p {
-	font-size:@baseFontSize;
-	color:@white;
-	margin:0;
-	background:@grayLight
 }
 
 /*---------------------------------------------------
     @Styles for Small Desktop sizes (until 1200)
 ---------------------------------------------------*/
 
-@media only screen and (min-width:960px) and (max-width:1199px) {
-	
-  /*	
-  body {
-  
-  }	
-  */
-
-}
+@media only screen and (min-width:960px) and (max-width:1199px) {}
 
 /*---------------------------------------------------
     @Styles for Tablet Portrait
 ---------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	
-  /*	
-  body {
   
-  }	
-  */
-  
-  #grid p.hide-txt-mob {
+  #grid span.hide-txt-mob {
 	  font:0/0 a; 
 	  color:transparent;
 	  margin-bottom:25px
@@ -80,56 +51,19 @@ body {
     @Styles for Mobile Landscape
 ---------------------------------------------------*/
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-  /*	
-  body {
-  
-  }	
-  */	
-	
-}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /*---------------------------------------------------
     @Styles for Mobile Portrait
 ---------------------------------------------------*/
 
-@media only screen and (max-width: 479px) {
-  
-  /*	
-  body {
-  
-  }	
-  */
-  
-}
+@media only screen and (max-width: 479px) {}
 
 /*---------------------------------------------------
     @Print Styles
 ---------------------------------------------------*/
 
-@media print {
-	
-	
-}
-
-/*---------------------------------------------------
-    @Assets for retina display
----------------------------------------------------*/
-
-/*
-@media only screen and (-webkit-min-device-pixel-ratio: 2),  
-only screen and (min--moz-device-pixel-ratio: 2),  
-only screen and (-o-min-device-pixel-ratio: 2/1),  
-only screen and (min-device-pixel-ratio: 2) {
-  	
-  .logo {
-	  background:url(../_img/logo@2x.png);
-	  background-size:200px 94px;
-  }
-  
-}
-*/
+@media print {}
 
 /*---------------------------------------------------
     @Font-Face

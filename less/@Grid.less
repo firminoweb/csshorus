@@ -1,14 +1,8 @@
 /*==================================================*/
+/* @Grids */
 /*==================================================*/
-                     /* @Grids */
-/*==================================================*/
-/*==================================================*/
-
-/* 1200 grid inspired by (http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345) */
-/* grid measures inspired by (Skeleton - http://getskeleton.com) */
-
 /* #1200 grid */
-/*---------------------------------------------------*/
+/*--------------------------------------------------*/
 
   .wrapper {
 	  width:@_WA; 
@@ -93,10 +87,6 @@
   
   .col2_3 {
 	  .3CWC (@_WA, 2);
-  }
-  
-  .row {
-	  margin-bottom:20px; 
   }
   
   .first {
@@ -322,27 +312,29 @@
 
 }
 
+.row {
+  margin-bottom:20px; 
+}
+
 /* #Print Fixes */
 /*---------------------------------------------------*/
 
 @media print {
    
    * {
-      color:@black !important; /* Black prints faster: h5bp.com/s */
-	  background:transparent !important;
+      color:@black !important;
+	    background:transparent !important;
       box-shadow:none !important;
       text-shadow:none !important;
-	  border-color:@black !important;
    }
    	
    @page {
 	  margin:0.6cm;
    }	
-   
-   /* Windows bug fix */	
+   	
    p, h2, h3 {   
       orphans:3; 
-	  widows:3; 
+	    widows:3; 
    }
    
    h2, h3 {
@@ -350,7 +342,7 @@
    }
    
    thead {
-      display:table-header-group; /* h5bp.com/t */
+      display:table-header-group;
    }
 
    tr,

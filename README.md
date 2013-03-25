@@ -4,8 +4,8 @@
 
 * Author:    João Firmino (<http://firmino.com.br>)
 * Date:      7 September, 2012
-* Last mod.: 18 February, 2013
-* Version:   1.0.1
+* Last mod.: 25 March, 2013
+* Version:   1.0.2
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 * GitHub:    <https://github.com/firminoweb/csshorus>
@@ -18,9 +18,8 @@ Features
 * Responsive Grid 1200, 960 down to mobile
 * Grid model for Design (.PSD)
 * Easy and Simple tool well-structured
-* Cross-Browser Support (Safari, Opera, Chrome, Firefox and IE7, IE8, IE9)
-* Has been tested across as many mobile devices (iPhone, iPad, Android, BlackBerry, Windows Phone)
-* Optimized for iOS devices (Styles and Retina)
+* Cross-Browser Support (Safari, Opera, Chrome, Firefox and IE8, IE9)
+* Has been tested across as many mobile devices (iOS, Android, BlackBerry, Windows Phone)
 * Print Friendly
 * Optimized for Blogs (figure with caption, search, flexible videos)
 * RTL Style

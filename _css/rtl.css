@@ -1,6 +1,6 @@
 /*---------------------------------------------------
-* RTL CSS for Horus V1.0.1
-* Last mod: 10/10/2012
+* RTL CSS for Horus V1.0.2
+* Last mod: 25/03/2013
 *
 * Copyright 2012, Yoni Greenberg (http://github.com/yonihbc)
 *
@@ -21,7 +21,7 @@ cite, blockquote cite {
 }
 
 code, pre { 
-	direction:ltr;
+	  direction:ltr;
     padding:0 4px 2px; 
 }
 
@@ -30,79 +30,52 @@ code {
 }
 
 pre { 
-	padding:10px;
+	  padding:10px;
 }
 
 /* #Lists and Links */
-
 ul ul, ol ol {
     margin:10px 20px 0 0;
 }
 
-
 /* #Table */
-
-.table th, .table td {
-    text-align:right;
-}
-
-.table.bordered {
-    border-width:1px;
-}
+.table th, .table td { text-align:right; }
+.table.bordered { border-width:1px; }
 
 /* #Navigation */
 /*---------------------------------------------------*/
-
 .breadcrumbs li, .pagination li, .tagcloud li {
-	margin-left:5px;
+	  margin-left:5px;
     unicode-bidi:embed;
 }
 
-label input[type="radio"], label input[type="checkbox"] , label span {
+label input[type="radio"], label input[type="checkbox"], label span {
     unicode-bidi:embed;
 }
 
-.tagcloud li {
-	margin-left:0;
-}
+.tagcloud li { margin-left:0; }
 
 /*==================================================*/
+/* @Grids */
 /*==================================================*/
-                     /* @Grids */
-/*==================================================*/
-/*==================================================*/
-
-/* 1200 grid inspired by (http://www.aliaspooryorik.com/blog/index.cfm/e/posts.details/post/responsive-css-grid-systems-345) */
-/* grid measures inspired by (Skeleton - http://getskeleton.com) */
-
 /* #1200 grid */
 /*---------------------------------------------------*/
-
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col1_3, .col2_3 {
 	  float:right; 
   }
   
-  .first {
-	  margin-right:0;
-  }
-  
-  .last {
-	  margin-left:0;
-  }
+  .first { margin-right:0; }
+  .last { margin-left:0; }
 
 /* #Image Aligns (wordpress friendly) */
 /*---------------------------------------------------*/
+.alignleft { float:right; }
+.alignright { float:left; }
 
-.alignnone {
-	margin:5px 0 20px 20px;
+img.alignleft, figure.alignleft {
+    margin:0 0 20px 20px
 }
 
-.alignright {
-	float:right;
-	margin:5px 20px 20px 0;
-}
-
-.alignleft {
-	float:left; 
-	margin:5px 0 20px 20px;
+img.alignright, figure.alignright {
+    margin:0 20px 20px 0
 }

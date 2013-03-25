@@ -1,9 +1,6 @@
 /*==================================================*/
+/* @Basic Styles */
 /*==================================================*/
-             /* @Basic Styles */
-/*==================================================*/
-/*==================================================*/
-
 /* #Reset (by E. Meyers) */
 /*---------------------------------------------------*/
 
@@ -16,7 +13,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align:baseline
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display:block 
 }
@@ -69,48 +65,42 @@ video {
   height:auto;
 }
  
-h1, h2, h3, h4, h5, h6 { 
-	font-family:@serifFontFamily; 
-	text-rendering:optimizelegibility 
+h1, h2, h3, h4, h5, h6, p { 
+    word-wrap:break-word 
 }
 
 h1 { 
-    font-size:42px; 
-	line-height:46px; 
-	margin-bottom:20px 
+    font-size:42px;
+    line-height:42px; 
+	margin-bottom:24px; 
 }
 
 h2 { 
-    font-size:28px; 
-	line-height:32px; 
-	margin-bottom:12px 
+    font-size:28px;
+    line-height:28px; 
+	margin-bottom:18px; 
 }
 
 h3 { 
-    font-size:21px; 
-	line-height:25px; 
-	margin-bottom:8px 
+    font-size:21px;
+    line-height:21px;  
+	margin-bottom:12px; 
 }
 
 h4 { 
-    font-size:18px; 
-	line-height:22px; 
-	margin-bottom:8px 
+    font-size:18px;
+    line-height:18px; 
+	margin-bottom:8px; 
 }
 
 h5 { 
-    font-size:16px; 
-	line-height:20px; 
-	margin-bottom:4px
+    font-size:16px;
+    line-height:16px; 
+	margin-bottom:4px;
 }
 
 h6 { 
-    font-size:14px; 
-	line-height:18px 
-}
-
-h1, h2, h3, h4, h5, h6, p { 
-    word-wrap:break-word 
+    line-height:14px; 
 }
 
 p { 
@@ -162,27 +152,7 @@ address {
 hr { 
 	.border(1px, solid, @grayLighter);
 	clear:both; 
-	margin:20px 0; 
-	height:0 
-}
- 
-hr.inner-row { 
-    margin-right:10px; 
-    margin-left:10px; 
-}
- 
-hr.mtop { 
-    margin-bottom:0;
-    margin-top:@baseLineHeight; 
-}
-
-hr.mbottom { 
-    margin-bottom:@baseLineHeight; 
-	margin-top:0;
-}
-
-hr.cleanline { 
-    margin:0; 
+	margin:0; 
 }
 
 code, pre { 
@@ -229,10 +199,9 @@ mark {
 img { 
     border:0; 
 	vertical-align:middle; 
-	-ms-interpolation-mode:bicubic /* "-ms-interpolation-mode" applies to stretched images only on IE7 */
 }
  
-img.scale { 
+.scale { 
     max-width:100%; 
 	height:auto 
 }
@@ -264,25 +233,13 @@ figure figcaption {
 /* #Lists and Links */
 /*---------------------------------------------------*/
 
-ul, ol { 
-    margin: 0 0 20px 0 
-}
+ul, ol { margin: 0 0 20px 0 }
 
-ul {
-	list-style:none inside
-}
+ul { list-style:none inside }
+ol { list-style:decimal inside }
 
-ul.disc {
-	list-style-type:disc
-}
-
-ul.circle {
-	list-style-type:circle
-}
-
-ol {
-	list-style:decimal inside
-}
+.disc { list-style-type:disc }
+.circle { list-style-type:circle }
 
 li {
 	line-height:16px;
@@ -296,7 +253,6 @@ ul ul, ol ol {
 a, a:visited {
 	color:@grayDarker;
 	text-decoration:underline;
-	outline:0
 }
 
 a:hover, a:focus {
@@ -333,24 +289,24 @@ caption {
 	.border-top(1px, solid, @grayLighter);
 }
 
-  .table.cleanline td {
-	  border-top:0
-  }
-  
-.table.bordered {
-	border-width:1px 0 1px 1px;
-	border-style:solid;
-	border-color:@grayLighter
-}
+	.cleanline td {
+		border-top:0
+	}
 
-.table.bordered th, .table.bordered td {
-	.border-right(1px, solid, @grayLighter);
-}
+	.bordered {
+		border-width:1px 0 1px 1px;
+		border-style:solid;
+		border-color:@grayLighter
+	}
 
-.striped tbody tr:nth-child(odd) td,
-.striped tbody tr:nth-child(odd) th {
-	background:@grayWhite
-}	
+	.bordered th, .bordered td {
+		.border-right(1px, solid, @grayLighter);
+	}
+
+	.striped tbody tr:nth-child(odd) td,
+	.striped tbody tr:nth-child(odd) th {
+		background:@grayWhite
+	}	
 
 /* #Form and Button */
 /*---------------------------------------------------*/
@@ -395,7 +351,6 @@ input[type="text"], input[type="password"], input[type="email"], .labelinputs, t
 	padding:8px; 
 	background:@white; 
 	margin:0; 
-	outline:none;
 	.border-radius; 
 	display:block; 
 	margin-bottom:10px; 
@@ -407,7 +362,6 @@ input[type="radio"], input[type="checkbox"] {
 	height:15px;
 	display:inline;
     margin: 3px 0 10px;
-	*margin-bottom:0;
 	vertical-align:middle
 }
 
@@ -457,7 +411,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .search input {
 	width:52%;
 	display:inline;
-	margin-bottom:0;
 	vertical-align:top;
 }
 
@@ -470,20 +423,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /*---------------------------------------------------*/
 
 .breadcrumbs li, .pagination li, .tagcloud li {
-	font-size:@smallFontSize; 
-	color:@gray; 
+	font-size:@smallFontSize;
 	display:inline; 
 	margin-right:5px
 }
 
 .pagination li, .tagcloud li {
 	display:inline-block;
-	*line-height:28px;
-	*display:inline
 }	
 
 .pagination a {
-	font-size:@smallFontSize; 
 	padding:4px 10px
 }
 
@@ -492,7 +441,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
      padding:8px 12px;
   }
 
-.pagination a.b {
+.pagination .b {
 	font-weight:bold
 }
 
@@ -506,31 +455,30 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .tagcloud a {
 	font-style:italic; 
-	vertical-align:middle; 
-	color:@grayDarker 
+	vertical-align:middle;
 }
 
-.tagcloud a.f14 {
+.tagcloud .f14 {
 	font-size:110%
 }
 
-.tagcloud a.f16 {
+.tagcloud .f16 {
 	font-size:130%
 }
 
-.tagcloud a.f18 {
+.tagcloud .f18 {
 	font-size:160%
 }
 
-.tagcloud a.f21 {
+.tagcloud .f21 {
 	font-size:200%
 }
 
-.tagcloud a.f24 {
+.tagcloud .f24 {
 	font-size:240%
 }
 
-.tagcloud a.f28 {
+.tagcloud .f28 {
 	font-size:300%
 }
 
