@@ -1,47 +1,14 @@
-/*==================================================*/
-/* @Basic Styles */
-/*==================================================*/
-/* #Reset (by E. Meyers) */
-/*---------------------------------------------------*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, img, ins, kbd, q, s, samp, strike, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin:0;
-	padding:0;
-	border:0;
-	font-size:100%;
-	font:inherit;
-	vertical-align:baseline
+/*** @Basic ***/
+/* #Reset and Typography Styles */
+* { 
+	margin:0; 
+	padding:0; 
+	border:0; 
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { 
     display:block 
-}
-
-body { 
-    line-height:1 
-}
-
-ol, ul { 
-    list-style:none
-}
-
-blockquote, q { 
-    quotes:none 
-}
-
-blockquote:before, blockquote:after, q:before, q:after { 
-    content:''; 
-	content:none 
-}
-
-table {
-	background-color:transparent;
-    border-collapse:collapse; 
-	border-spacing:0 
-}  	
-
-/* #Basic and Typography Styles */
-/*---------------------------------------------------*/
+} 	
 
 body { 
     background:@white; 
@@ -61,14 +28,10 @@ audio:not([controls]) {
 }
 
 video {
-  width:100%;
-  height:auto;
-}
+	width:100%;
+	height:auto;
+} 
  
-h1, h2, h3, h4, h5, h6, p { 
-    word-wrap:break-word 
-}
-
 h1 { 
     font-size:42px;
     line-height:42px; 
@@ -94,17 +57,22 @@ h4 {
 }
 
 h5 { 
-    font-size:16px;
-    line-height:16px; 
+    font-size:14px;
+    line-height:14px; 
 	margin-bottom:4px;
 }
 
 h6 { 
-    line-height:14px; 
+	font-size: 12px;
+    line-height:12px; 
 }
 
 p { 
-    margin: 0 0 20px 0 
+    margin: 0 0 20px 0; 
+}
+
+h1, h2, h3, h4, h5, h6, p { 
+    word-wrap:break-word; 
 }
 
 p img { 
@@ -112,14 +80,14 @@ p img {
 }
 
 p.first:first-letter {
-	font-size:200%
+	font-size:200%;
 }
 
 blockquote, blockquote p { 
     font-size:18px; 
 	line-height:21px; 
 	color:@gray; 
-	font-style:italic 
+	font-style:italic;
 }
 
 blockquote { 
@@ -132,7 +100,7 @@ cite, blockquote cite {
     display:block; 
 	font-size:@smallerFontSize; 
 	text-align:right;
-	color:@grayLight 
+	color:@grayLight;
 }
 
 blockquote cite:before { 
@@ -163,6 +131,7 @@ code, pre {
 }
 
 code { 
+	display: inline-block; 	
     padding:4px 6px 2px; 
 	color:@black; 
 	background:@graySweet; 
@@ -207,7 +176,7 @@ img {
 }
 
 svg:not(:root) { 
-    overflow:hidden; /* SVG Fix to IE9 */
+    overflow:hidden;
 }
 
 figure {
@@ -231,8 +200,6 @@ figure figcaption {
 }
  
 /* #Lists and Links */
-/*---------------------------------------------------*/
-
 ul, ol { margin: 0 0 20px 0 }
 
 ul { list-style:none inside }
@@ -261,7 +228,10 @@ a:hover, a:focus {
 }
 
 /* #Table */
-/*---------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 .table {
 	width:100%;
@@ -269,9 +239,7 @@ a:hover, a:focus {
 }
 
 caption {
-	font-size:@baseFontSize;
 	padding:8px;
-	text-align:center;
 	background:@grayWhite;
 }
 
@@ -281,17 +249,10 @@ caption {
     text-align:left;
 }
 
-.table th {
-  font-weight:bold
-}
+.table th { font-weight:bold; }
+.table td { .border-top(1px, solid, @grayLighter); }
 
-.table td {
-	.border-top(1px, solid, @grayLighter);
-}
-
-	.cleanline td {
-		border-top:0
-	}
+	.cleanline td { border-top:0; }
 
 	.bordered {
 		border-width:1px 0 1px 1px;
@@ -309,8 +270,6 @@ caption {
 	}	
 
 /* #Form and Button */
-/*---------------------------------------------------*/
-
 fieldset {
 	position:relative;
     padding-top:20px;
@@ -319,15 +278,13 @@ fieldset {
 }
 
 .bt, .pagination a, button, input[type="submit"], input[type="reset"], input[type="button"]  {
-	font-size:@baseFontSize; 
-	font-weight:normal; 
+	font:inherit;
+    line-height: 22px;
 	display:inline-block;
-	padding:6px 14px; 
-	line-height:@baseLineHeight; 
+	padding:8px 12px;
 	color:@gray; 
 	text-align:center; 
 	text-decoration:none; 
-	vertical-align:middle; 
 	cursor:pointer; 
     .gradient(@grayWhite, @white, @gradientSet); 
 	.border(1px, solid, @grayLighter); 
@@ -342,7 +299,7 @@ fieldset {
 }
 
 .labelinputs, input, select, textarea {
-	width:93%
+	width:99%
 }
 
 input[type="text"], input[type="password"], input[type="email"], .labelinputs, textarea, select {
@@ -358,11 +315,8 @@ input[type="text"], input[type="password"], input[type="email"], .labelinputs, t
 }
 
 input[type="radio"], input[type="checkbox"] {
-	width:15px;
-	height:15px;
-	display:inline;
-    margin: 3px 0 10px;
-	vertical-align:middle
+	width:16px;
+	height:16px;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
@@ -372,27 +326,27 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 select {
-    width:95.2%;
     .appearance;
-	cursor:context-menu;
 	.gradient(@grayWhite, @iceWhite, @gradientSetc);
-    .box-shadow-none;	
+	padding-right: @baseLineHeight;	
 }
 
 textarea {
-	min-height:80px;
 	resize:none;
 }
 
 label, legend {
-	font-size:@inputFontSize; 
 	font-weight:bold; 
 	display:block;
 }
 
+
+label {
+	margin-bottom: 10px;
+}
+
 legend {
-	color:@gray; 
-	font-weight:normal; 
+	color:@gray;
 	font-style:italic ;
 	padding-right:10px;	
 }
@@ -410,25 +364,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .search input {
 	width:52%;
-	display:inline;
-	vertical-align:top;
-}
-
-.search button, .search input[type="submit"] {
-	width:34%;
-	margin:0;
 }
 
 /* #Navigation */
-/*---------------------------------------------------*/
-
 .breadcrumbs li, .pagination li, .tagcloud li {
 	font-size:@smallFontSize;
-	display:inline; 
-	margin-right:5px
-}
-
-.pagination li, .tagcloud li {
 	display:inline-block;
 }	
 
@@ -445,12 +385,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	font-weight:bold
 }
 
-.pagination a:hover, .pagination a.active {
+.pagination a:hover, a.current {
 	background:@white
-}
-
-.tagcloud li {
-	margin-right:0
 }
 
 .tagcloud a {
@@ -458,30 +394,4 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	vertical-align:middle;
 }
 
-.tagcloud .f14 {
-	font-size:110%
-}
-
-.tagcloud .f16 {
-	font-size:130%
-}
-
-.tagcloud .f18 {
-	font-size:160%
-}
-
-.tagcloud .f21 {
-	font-size:200%
-}
-
-.tagcloud .f24 {
-	font-size:240%
-}
-
-.tagcloud .f28 {
-	font-size:300%
-}
-
-.tagcloud a:hover {
-	color:@gray
-}
+.tagcloud a:hover { color:@gray; }

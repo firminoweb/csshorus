@@ -1,9 +1,5 @@
-/*==================================================*/
-/* @Grids */
-/*==================================================*/
+/*** @Grids ***/
 /* #1200 grid */
-/*--------------------------------------------------*/
-
   .wrapper {
 	  width:@_WA; 
 	  margin:0 auto; 
@@ -99,8 +95,6 @@
 
 
 /* #960 grid */
-/*---------------------------------------------------*/
-
 @media print, screen and (min-width:960px) and (max-width:1199px) {
 	
   .wrapper {
@@ -182,8 +176,6 @@
 }
 
 /* #Tablet (Portrait) */
-/*---------------------------------------------------*/
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
   .wrapper {
@@ -273,8 +265,6 @@
 }
 
 /* #Mobile (Landscape) */
-/*---------------------------------------------------*/
-
 @media only screen and (min-width:480px) and (max-width:767px) {
 
   .wrapper {
@@ -293,8 +283,6 @@
 }
 
 /* #Mobile (Portrait) */
-/*---------------------------------------------------*/
-
 @media only screen and (max-width:479px) {
 
   .wrapper {
@@ -317,41 +305,25 @@
 }
 
 /* #Print Fixes */
-/*---------------------------------------------------*/
-
 @media print {
    
    * {
       color:@black !important;
-	    background:transparent !important;
+    background:transparent !important;
       box-shadow:none !important;
       text-shadow:none !important;
    }
-   	
-   @page {
-	  margin:0.6cm;
-   }	
-   	
-   p, h2, h3 {   
-      orphans:3; 
-	    widows:3; 
-   }
+    
+   @page { margin:0.5cm; }  
    
-   h2, h3 {
-      page-break-after:avoid;
-   }
+   p, h2, h3 { orphans:3; widows:3; }
    
-   thead {
-      display:table-header-group;
-   }
+   h2, h3 { page-break-after:avoid; }   
 
-   tr,
-   img {
-      page-break-inside: avoid;
-   }      
+   thead { display:table-header-group; }
+
+   tr, img { page-break-inside: avoid; }
   
-  img { 
-      max-width:100% !important; 
-  }
+   img { max-width:100% !important; }
   
 }

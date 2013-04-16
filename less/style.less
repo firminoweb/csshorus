@@ -1,75 +1,51 @@
-/*---------------------------------------------------
-* CSS Horus V1.0.2
+/*
+* CSS Horus V1.0.3
 * http://csshor.us
-* Last mod: 25/03/2012
+* Last mod: 16/04/2012
 *
 * Copyright 2012, João Firmino
 * @firminoweb
----------------------------------------------------*/
+*/
 
 // Variables
 @import "#Variables.less";
 
-/*---------------------------------------------------
-    @Website Styles
----------------------------------------------------*/
-
+/* @Website Styles */
 body {}
 
 /* Test styles */
-
 #grid div > div {
 	background:@graySweet;
 	overflow:hidden
 }
 
-#grid span {
-	font-size:@smallerFontSize;
-}
+#grid span { font-size:@smallerFontSize; }
 
-/*---------------------------------------------------
-    @Styles for Small Desktop sizes (until 1200)
----------------------------------------------------*/
-
+/* @Styles for Small Desktop sizes (until 1200) */
 @media only screen and (min-width:960px) and (max-width:1199px) {}
 
-/*---------------------------------------------------
-    @Styles for Tablet Portrait
----------------------------------------------------*/
-
+/* @Styles for Tablet Portrait */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   
   #grid span.hide-txt-mob {
 	  font:0/0 a; 
 	  color:transparent;
-	  margin-bottom:25px
+	  margin-bottom:25px;
   }
 	
 }
 
-/*---------------------------------------------------
-    @Styles for Mobile Landscape
----------------------------------------------------*/
-
+/* @Styles for Mobile Landscape */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-/*---------------------------------------------------
-    @Styles for Mobile Portrait
----------------------------------------------------*/
-
+/* @Styles for Mobile Portrait */
 @media only screen and (max-width: 479px) {}
 
-/*---------------------------------------------------
-    @Print Styles
----------------------------------------------------*/
-
+/* @Print Styles */
 @media print {}
 
-/*---------------------------------------------------
-    @Font-Face
----------------------------------------------------*/
-
- /*
+/* @Font-Face */
+/*
 @font-face {
 	font-family: 'FontName';
 	src: url('FontName.eot'); /IE9 Compat Modes/
@@ -80,21 +56,7 @@ body {}
 }
 */
 
-/*---------------------------------------------------
-    @Selection
----------------------------------------------------*/
-
-::selection {
-	color:@white;
-	background:@grayDarker
-}
-
-::-webkit-selection {
-	color:@white;
-	background:@grayDarker
-}
-
-::-moz-selection {
-	color:@white;
-	background:@grayDarker
-}
+/* @Selection */
+::selection { color:@white; background:@grayDarker }
+::-webkit-selection { color:@white; background:@grayDarker }
+::-moz-selection { color:@white; background:@grayDarker }
