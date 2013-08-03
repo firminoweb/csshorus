@@ -2,265 +2,207 @@
 <html lang="en">
 <head>
     
-  <title>CSS Hórus - v1.0.3</title>
+  <title>CSSHórus - v2.0.0</title>
     
   <!--======= Basic Metas =======-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
+
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
 
   <!--======= Mobile Metas =======-->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0;">
     
-  <!--======= Favicons =======-->
+	<!--======= Favicons =======-->
     
   <!-- website favicon -->
-  <link rel="shortcut icon" href="_img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png">
   <!-- iPhone, iPod Touch -->
-  <link rel="apple-touch-icon" href="_img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <!-- iPhone with Retina display -->
-  <link rel="apple-touch-icon" sizes="114x114" href="_img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
   <!-- iPad first and second generation -->
-  <link rel="apple-touch-icon" sizes="72x72" href="_img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <!-- iPad with Retina display -->
-  <link rel="apple-touch-icon" sizes="144x144" href="_img/apple-touch-icon-144x144.png">    
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">    
     
   <!--======= CSS =======-->
     
-  <!-- CSS Hórus Framework -->
-	<link rel="stylesheet" type="text/css" href="_css/horus.css">
-  <!-- Your Style -->
-	<link rel="stylesheet" type="text/css" href="_css/style.css">
-	<!-- RTL Style -->
-	<link rel="stylesheet" type="text/css" href="_css/rtl.css">
+  <!-- CSSHórus Library -->
+  <link rel="stylesheet" type="text/css" href="css/horus/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/horus/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/horus/miscs.css">
+  <link rel="stylesheet" type="text/css" href="css/horus/print.css">
+  <!-- Skin Styles -->
+  <link rel="stylesheet" type="text/css" href="css/skin/default/style.css">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-	<![endif]-->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+  <![endif]-->
 
 </head>
 
 <body>
 
-
-  <div class="wrapper">
+	<div class="wrapper">
     
-    <header class="col16 row">
-      <h1 style="margin-top:20px">CSS Hórus</h1>
-      <p>Version 1.0.3</p>
+		<header class="col12">
+			<h1 class="m20-top">CSSHórus</h1>
+			<p>Version 2.0.0</p>
       <hr>
-    </header>
+		</header>
  
-        <section class="col16 row" id="intro">
+        <section class="col12" id="intro">
               <h2>CSS framework for easy and fast development of responsive and mobile websites.</h2>   
               <hr>    
         </section>      
         
-        <section class="row" id="grid">
+        <section class="col12" id="grid">
             
-           <header class="col16 row"> 
+           <header class="row"> 
              <h2>Grid</h2>
-             <h5>grid system 1200, 960, tablet and mobile for designing adaptive websites.</h5>
-           </header>  
-           
-           <div class="row" id="ex_col16">
-              <div class="col16">
-                  <span>.col16</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col1_col15">   
+             <h5>Designing adaptive websites using grid system with 12 columns for desktop, tablet and mobile.</h5>
+           </header>    
+   
               <div class="col1">
-                  <span class="hide-txt-mob">.col1</span>   
+                  <span class="hidden-mobile">.col1</span>   
               </div>
               
-              <div class="col15">
-                  <span>.col15</span>   
+              <div class="col11 last">
+                  <span>.col11</span>   
               </div>
-           </div>
-           
-           <div class="row" id="ex_col2_col14">    
+  
               <div class="col2">
                   <span>.col2</span>   
               </div>
               
-              <div class="col14">
-                  <span>.col14</span>   
+              <div class="col10 last">
+                  <span>.col10</span>   
               </div> 
-           </div>
-           
-           <div class="row" id="ex_col3_col13">   
+              
               <div class="col3">
                   <span>.col3</span>   
               </div>
               
-              <div class="col13">
-                  <span>.col13</span>   
+              <div class="col9 last">
+                  <span>.col9</span>   
               </div> 
-           </div>
-           
-           <div class="row" id="ex_col4_col12">   
+
               <div class="col4">
                   <span>.col4</span>   
               </div>
               
-              <div class="col12">
-                  <span>.col12</span>   
+              <div class="col8 last">
+                  <span>.col8</span>   
               </div> 
-           </div>
            
-           <div class="row" id="ex_col5_col11">   
               <div class="col5">
                   <span>.col5</span>   
               </div>
               
-              <div class="col11">
-                  <span>.col11</span>   
+              <div class="col7 last">
+                  <span>.col7</span>   
               </div>
-           </div>
-           
-           <div class="row" id="ex_col6_col10">    
+             
               <div class="col6">
                   <span>.col6</span>   
               </div>
               
-              <div class="col10">
-                  <span>.col10</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col7_col9">   
-              <div class="col7">
-                  <span>.col7</span>   
-              </div>
-              
-              <div class="col9">
-                  <span>.col9</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col8_col8">   
-              <div class="col8">
-                  <span>.col8</span>   
-              </div>
-              
-              <div class="col8">
-                  <span>.col8</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col9_col7">   
-              <div class="col9">
-                  <span>.col9</span>   
-              </div>
-              
-              <div class="col7">
-                  <span>.col7</span>   
-              </div> 
-           </div> 
-           
-           <div class="row" id="ex_col10_col6">                                                                
-              <div class="col10">
-                  <span>.col10</span>   
-              </div>
-              
-              <div class="col6">
+              <div class="col6 last">
                   <span>.col6</span>   
               </div>
-           </div>
-           
-           <div class="row" id="ex_col11_col5">    
-              <div class="col11">
-                  <span>.col11</span>   
+              
+              <div class="col7">
+                  <span>.col7</span>   
               </div>
               
-              <div class="col5">
+              <div class="col5 last">
                   <span>.col5</span>   
-              </div> 
-           </div> 
-           
-           <div class="row" id="ex_col12_col4">  
-              <div class="col12">
-                  <span>.col12</span>   
+              </div>
+             
+              <div class="col8">
+                  <span>.col8</span>   
               </div>
               
-              <div class="col4">
+              <div class="col4 last">
                   <span>.col4</span>   
               </div>
-           </div> 
-           
-           <div class="row" id="ex_col13_col3">  
-              <div class="col13">
-                  <span>.col13</span>   
+            
+              <div class="col9">
+                  <span>.col9</span>   
               </div>
               
-              <div class="col3">
+              <div class="col3 last">
                   <span>.col3</span>   
-              </div>
-           </div>  
-           
-           <div class="row" id="ex_col14_col2">  
-              <div class="col14">
-                  <span>.col14</span>   
+              </div> 
+                                                                          
+              <div class="col10">
+                  <span>.col10</span>   
               </div>
               
-              <div class="col2">
+              <div class="col2 last">
                   <span>.col2</span>   
               </div>
-           </div>
-           
-           <div class="row" id="ex_col15_col1">  
-              <div class="col15">
-                  <span>.col15</span>   
+               
+              <div class="col11">
+                  <span>.col11</span>   
               </div>
               
-              <div class="col1">
-                  <span class="hide-txt-mob">.col1</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col1_3">  
-              <div class="col1_3">
-                  <span>.col1_3</span>   
-              </div>
-              
-              <div class="col1_3">
-                  <span>.col1_3</span>   
-              </div>
-              
-              <div class="col1_3">
-                  <span>.col1_3</span>   
-              </div>
-           </div>
-           
-           <div class="row" id="ex_col23_col13">
-              <div class="col1_3">
-                  <span>.col1_3</span>   
-              </div>           
-                             
-              <div class="col2_3">
-                  <span>.col2_3</span>   
+              <div class="col1 last">
+                  <span>.col1</span>   
               </div> 
-           </div>                          
+
+              <div class="col12">
+                  <span>.col12</span>   
+              </div>
+
+              <div class="col3">
+                  <span>.col3</span>   
+              </div>  
+
+              <div class="col3">
+                  <span>.col3</span>   
+              </div>  
+
+              <div class="col3">
+                  <span>.col3</span>   
+              </div>  
+
+              <div class="col3 last">
+                  <span>.col3</span>   
+              </div>
+
+              <div class="col4">
+                  <span>.col4</span>   
+              </div>  
+
+              <div class="col4">
+                  <span>.col4</span>   
+              </div>  
+
+              <div class="col4 last">
+                  <span>.col4</span>   
+              </div>                                                                                    
             
         </section> 
         
-        <section class="row" id="fonts_form">
+        <section class="col12" id="fonts_form">
             
-           <header class="col16 row"> 
+           <header class="row"> 
              <h2>All Basic Styles</h2>
              <h5>Basic, Typography, Lists, Links, Table, Form, Button</h5>
              
-             <hr class="margintop">
+             <hr>
            </header> 
            
            <div class="row">
-             <div class="col1_3">
+             <div class="col5">
              
                 <h1>&lt;h1&gt;Heading&lt;/h1&gt;</h1>
                 <h2>&lt;h2&gt;Heading&lt;/h2&gt;</h2>
@@ -284,7 +226,7 @@
                 
              </div>
              
-             <div class="col1_3">
+             <div class="col5">
                  
                  <blockquote>
                  <strong>&lt;blockquote&gt;</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <cite>João Firmino</cite>
@@ -292,7 +234,9 @@
                  
                  <pre>&lt;pre&gt; &lt;/pre&gt;</pre>
                  
-                 <pre>&lt;pre&gt; &lt;/pre&gt; <code>&lt;code&gt; &lt;/code&gt;</code></pre>
+                 <code class="row">&lt;code&gt; &lt;/code&gt;</code>
+
+                 <pre>&lt;pre&gt; &lt;/pre&gt; <br> <code>&lt;code&gt; &lt;/code&gt;</code></pre>
                  
                  <a href="#" title="link button" class="bt">link button</a> <a href="#" title="link button" class="bt">link button</a>
                  
@@ -300,11 +244,11 @@
                  
                  <p>Paragraph with <a href="#" title="Link">link</a>, <abbr title="abbreviation lorem ipsum test">abbreviation</abbr>, Sub<sub>3</sub>, Sup<sup>3</sup>, <kbd>&lt;kbd&gt;</kbd> and <mark>&lt;mark&gt;</mark> examples.</p>
                  
-                 <p class="first">Paragraph with <strong>:first-letter</strong> example.</p>
+                 <p class="st">Paragraph with <strong>:first-letter</strong> example.</p>
                  
              </div>
              
-             <div class="col1_3">
+             <div class="col2 last">
               
                  <h3>Ordered list</h3>
                  
@@ -335,10 +279,13 @@
                  </ul>                                                                      
                  
              </div>
+
+             <hr>
+             
            </div>
            
            <div class="row">  
-             <div class="col2_3">
+             <div class="col8">
              
                  <h3>Breadcrumbs</h3>
                  
@@ -374,7 +321,7 @@
              
              </div>
              
-             <div class="col1_3">
+             <div class="col4 last">
 
                  <h3>Ordered sub-list</h3>
                  
@@ -402,9 +349,9 @@
              
            </div>
            
-           <div>
+           <div class="row">
              
-             <div class="col2_3">
+             <div class="col8">
                           
                  <table class="table">
                    <caption>Default Table</caption>
@@ -572,7 +519,7 @@
                  
              </div>
              
-             <div class="col1_3">
+             <div class="col4 last">
                          
                   <form>
 
@@ -631,16 +578,16 @@
            
         </section> 
         
-        <section class="row" id="blog">
+        <section class="col12" id="blog">
         
-           <header class="col16 row"> 
+           <header class="row"> 
              <h2>Post example</h2>
-             <h5>Post/Article test with: &lt;figure&gt;, &lt;figcaption&gt;, text and sidebar.</h5>
+             <h5>Post/Article test with responsive embedded video.</h5>
              
              <hr class="margintop">
            </header>
            
-           <article class="col12">
+           <article class="col9">
               
               <header class="row">
                  <h1>Post title example</h1>
@@ -648,12 +595,8 @@
                  <h6>by: João Firmino | 18/10/2012</h6>
               </header>
               
-              <figure class="alignleft">
-                 <img src="_img/apple-touch-icon-144x144.png" width="144" height="144" alt="icon" title="hórus apple icon">
-                 
-                 <figcaption>This is horus apple-touch-icon to exemplify this post.</figcaption>
-              </figure>
-              
+              <img src="img/apple-touch-icon-144x144.png" width="144" height="144" alt="icon" title="hórus apple icon" class="alignleft">
+
               <p>Lorem ipsum dolor sit amet, <big>consectetur</big> <small>adipiscing elit</small>. Duis aliquam <strong>ligula</strong> id diam tempus ac <strong><em>adipiscing</em></strong> ligula condimentum. Nullam accumsan erat nec risus dictum a porttitor est consectetur. Maecenas eget posuere est. Fusce mattis blandit semper. Phasellus nec est lorem, venenatis tempor est. Donec ac metus id massa pulvinar suscipit volutpat id nibh. In porttitor tristique mauris quis euismod. Vestibulum at consectetur tellus. Morbi leo dolor, interdum quis sagittis et, vulputate <sub>vitae</sub> lectus. Proin <sup>dui</sup> dui, gravida ac ullamcorper vitae, adipiscing id odio.</p>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam ligula id diam tempus ac adipiscing ligula condimentum. Nullam accumsan erat nec risus dictum a porttitor est consectetur. Maecenas eget posuere est. Fusce mattis blandit semper. Phasellus nec est lorem, venenatis tempor est. Donec ac metus id massa pulvinar suscipit volutpat id nibh. In porttitor tristique mauris quis euismod. Vestibulum at consectetur tellus. Morbi leo dolor, interdum quis sagittis et, vulputate vitae lectus.</p>
@@ -666,7 +609,7 @@
                             
            </article>
            
-           <aside class="col4">
+           <aside class="col3 last">
            
                <form id="searchform" class="search row">
                   <input type="text" name="s" id="s"> <button type="submit">Search</button>
@@ -704,12 +647,12 @@
         
         </section>         
         
-        <footer class="col16 row">
-            <hr class="row">
-            <h6>copyright 2012 - <a href="http://firmino.com.br" title="Firmino Web Developer" target="_blank">João Firmino</a></h6>
+        <footer class="col12">
+            <hr class="m20-bottom">
+            <h6>copyright 2013 - <a href="http://twitter.com/firminoweb" title="Firmino Web Developer" target="_blank">João Firmino</a></h6>
         </footer>
 
-  </div>
+	</div>
     
   <!--======= JS =======-->
   <!-- <script type="text/javascript" src="script.js"></script> -->
