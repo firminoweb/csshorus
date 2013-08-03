@@ -1,0 +1,128 @@
+/* GRID ***********
+*
+* CSS Hórus V2.0.0
+* http://csshor.us
+* Last mod: 03/08/2013
+*
+* Copyright 2013, João Firmino
+* http://twitter.com/firminoweb
+* https://github.com/firminoweb
+*
+*/
+
+@import "../Vars.less";
+
+/* Grids */
+.wrapper {
+  .main-wrapper;
+}
+
+.col1, 
+.col2, 
+.col3, 
+.col4, 
+.col5, 
+.col6, 
+.col7, 
+.col8, 
+.col9, 
+.col10, 
+.col11, 
+.col12 {
+  .set-cols;
+}
+
+.col1 img, 
+.col2 img, 
+.col3 img, 
+.col4 img, 
+.col5 img, 
+.col6 img, 
+.col7 img, 
+.col8 img, 
+.col9 img, 
+.col10 img, 
+.col11 img, 
+.col12 img {
+  max-width: 100%;
+  height: auto;
+}  
+
+.col1  { width: @col1; }
+.col2  { width: @col2; }
+.col3  { width: @col3; }
+.col4  { width: @col4; }
+.col5  { width: @col5; }
+.col6  { width: @col6; }
+.col7  { width: @col7; }
+.col8  { width: @col8; }
+.col9  { width: @col9; }
+.col10 { width: @col10; }
+.col11 { width: @col11; }
+.col12 { width: @col12; }
+
+.last  { margin-right: 0; }
+
+/* Mobile */
+@media screen and (max-width: @mobile) {
+
+  .col1, 
+  .col2, 
+  .col3, 
+  .col4, 
+  .col5, 
+  .col6, 
+  .col7, 
+  .col8, 
+  .col9, 
+  .col10, 
+  .col11, 
+  .col12 {
+    width: @fullSize;
+  }
+
+  .hidden-mobile {
+    display:none; 
+  }  
+
+}
+
+.row { 
+  margin-bottom: @fontSizeH; 
+}
+
+/* Clear and Fixes */
+.wrapper {
+  &:after {
+  content: ""; 
+  display: table;  
+  height: 0; 
+  visibility: hidden;
+  clear: both;    
+  }
+}
+
+.clearfix, 
+.row {
+  zoom: 1;
+}
+
+.clearfix,
+.row {
+  &:before,
+  &:after {
+  content: ""; 
+  display: table;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  }
+}
+
+.clearfix,
+.row {
+  &:after {
+  font-size: 0;
+  clear: both;
+  }
+}

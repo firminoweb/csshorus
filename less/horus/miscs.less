@@ -1,0 +1,246 @@
+/* MISCS **********
+*
+* CSS Hórus V2.0.0
+* http://csshor.us
+* Last mod: 03/08/2013
+*
+* Copyright 2013, João Firmino
+* http://twitter.com/firminoweb
+* https://github.com/firminoweb
+*
+*/
+
+@import "../Vars.less";
+
+/* Aligns & Formats */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+img.alignright {
+  float: right;  
+  margin: 5px 0 20px 20px;
+}
+
+img.aligncenter {
+  margin: 0 auto 20px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.st:first-letter {
+  font-size: 200%;
+}
+
+/* Margin and Paddings */
+.m10 {
+  margin: @m10;
+}
+
+.m20 {
+  margin: @m20;
+}
+
+.m40 {
+  margin: @m40;
+}
+
+.m10-top {
+  margin-top: @m10;
+}
+
+.m20-top {
+  margin-top: @m20;
+}
+
+.m40-top {
+  margin-top: @m40;
+}
+
+.m10-right {
+  margin-right: @m10;
+}
+
+.m20-right {
+  margin-right: @m20;
+}
+
+.m40-right {
+  margin-right: @m40;
+}
+
+.m10-bottom {
+  margin-bottom: @m10;
+}
+
+.m20-bottom {
+  margin-bottom: @m20;
+}
+
+.m40-bottom {
+  margin-bottom: @m40;
+}
+
+.m10-left {
+  margin-left: @m10;
+}
+
+.m20-left {
+  margin-left: @m20;
+}
+
+.m40-left {
+  margin-left: @m40;
+}
+
+.p10 {
+  padding: @m10;
+}
+
+.p20 {
+  padding: @m20;
+}
+
+.p40 {
+  padding: @m40;
+}
+
+.p10-top {
+  padding-top: @m10;
+}
+
+.p20-top {
+  padding-top: @m20;
+}
+
+.p40-top {
+  padding-top: @m40;
+}
+
+.p10-right {
+  padding-right: @m10;
+}
+
+.p20-right {
+  padding-right: @m20;
+}
+
+.p40-right {
+  padding-right: @m40;
+}
+
+.p10-bottom {
+  padding-bottom: @m10;
+}
+
+.p20-bottom {
+  padding-bottom: @m20;
+}
+
+.p40-bottom {
+  padding-bottom: @m40;
+}
+
+.p10-left {
+  padding-left: @m10;
+}
+
+.p20-left {
+  padding-left: @m20;
+}
+
+.p40-left {
+  padding-left: @m40;
+}
+
+/* Table */
+
+.table {
+  width:100%;
+  margin:0 0 20px;
+}
+
+caption {
+  padding: @fontSizeB;
+  background: transparent;
+}
+
+.table th, 
+.table td {
+  line-height: @fontSizeF;
+  padding: @fontSizeB;
+  text-align:left;
+}
+
+.table td { border-top:1px solid; }
+
+  .cleanline td { border-top:0; }
+
+  .bordered {
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+  }
+
+  .bordered th, .bordered td {
+    border-right: 1px solid;
+  }
+
+  .striped tbody tr:nth-child(odd) td,
+  .striped tbody tr:nth-child(odd) th {
+    background: transparent;
+  }
+
+/* Responsive embedded videos */
+.videoWrap {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+    iframe,
+    object,
+    embed {
+      width: @fullSize;
+      height: @fullSize; 
+      position: absolute;
+      top: 0;
+      left: 0;
+    }  
+}
+
+/* Others */
+.hidden { 
+  display: none !important; 
+}
+
+.hidden-text { 
+  font: 0/0 a !important; 
+}
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+.breadcrumbs li, 
+.pagination li {
+    display: inline-block;
+    font-size: 0.85;
+}

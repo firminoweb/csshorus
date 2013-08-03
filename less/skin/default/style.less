@@ -1,0 +1,289 @@
+/* Default skin style ***********
+*
+* CSS Hórus V2.0.0
+* http://csshor.us
+* Last mod: 03/08/2013
+*
+* Copyright 2013, João Firmino
+* http://twitter.com/firminoweb
+* https://github.com/firminoweb
+*
+*/
+/* @Website Styles */
+body {
+	color: #333;
+}
+
+a, 
+a:visited {
+	color: #333;
+}
+
+a:hover, 
+a:focus {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Grid example style */
+#grid div {
+	background:#eee;
+	padding: 10px;
+}
+
+/* Typography */
+address {
+	margin-bottom: 1em;
+}
+
+blockquote, 
+blockquote p { 
+	color: #666;	
+	line-height: 1.5em; 
+}
+
+blockquote { 
+    margin:0 0 20px; 
+	padding:0 20px; 
+	border-color: #333; 
+}
+
+cite, 
+blockquote cite { 
+	color: #999;
+	text-align: right;
+	display: block;
+}
+
+abbr[title],
+hr { 
+	border-color: #999; 
+}
+
+pre,
+code  { 
+    padding: 0.5em; 
+	color: #333; 
+    border-radius: 5px;
+}
+
+pre {
+	margin-bottom: 1em;
+	box-shadow: 1px 1px 4px #eee;
+}
+
+code {
+	border: 1px solid #ccc;
+	display: block;
+	background: #eee;
+}
+
+pre,
+kbd {
+	background: #f6f6f6; 
+	border:1px solid #ccc; 
+}
+
+mark {
+	color: #fff;
+	background: #333
+}
+
+/* figure */
+figure {
+	width: 1px;
+	display: table;
+	border-bottom: 1px dotted #ccc;
+}
+
+figure img {
+	padding: 4px;
+	background: #fafafa;
+	border:1px solid #ccc;
+}
+
+figcaption {
+	font-size: 80%;
+	font-style: italic;
+	color: #999;		
+	line-height: 1em;
+	margin: 0.5em 0;
+}
+
+/* #Table */
+caption {
+	background: #f6f6f6;
+}
+
+.table td,
+.bordered,
+.bordered th, 
+.bordered td  { 
+	border-color: #ccc; 
+}
+
+.striped tbody tr:nth-child(odd) td,
+.striped tbody tr:nth-child(odd) th {
+	background: #f6f6f6
+}	
+
+/* #Form and Buttons */
+fieldset {
+	border-top: 1px dotted #999;
+}
+
+input, 
+select, 
+textarea {
+	width:99%;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+	width:16px;
+	height:16px;
+}
+
+label, 
+legend {
+    display: block;
+    font-weight: bold;
+}
+
+label {
+	margin-bottom: 1em;
+}
+
+legend {
+	padding: 0.5em;
+	border: 1px dotted #999;
+	background: #f7f7f7;
+}
+
+label span, 
+legend span {
+    font-size: 0.85em;
+    font-weight: 400;
+}
+
+.bt, 
+.pagination a, 
+button, 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"]  {
+	font: inherit;
+	display: inline-block;
+	padding: 9px 12px;
+	color: #666;
+	text-decoration:none; 
+	cursor:pointer;
+	background-color: #f6f6f6;
+	background:linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background:-webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background:-moz-linear-gradient(center 1px, #ffffff, #e6e6e6);
+	background:-ms-linear-gradient(top, #ffffff, #e6e6e6);
+	background:-o-linear-gradient(top, #ffffff, #e6e6e6); 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#e6e6e6)');
+	border:1px solid #ccc; 
+	border-radius: 5px; 
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.09); 
+}
+
+.bt:hover, 
+.pagination a:hover, 
+button:hover, 
+input[type="submit"]:hover, 
+input[type="reset"]:hover, 
+input[type="button"]:hover {
+	background-color: #f6f6f6;
+	background:linear-gradient(to bottom, #e0e0e0, #ffffff);
+	background:-webkit-linear-gradient(top, #e0e0e0, #ffffff);
+	background:-moz-linear-gradient(center 1px, #e0e0e0, #ffffff);
+	background:-ms-linear-gradient(top, #e0e0e0, #ffffff);
+	background:-o-linear-gradient(top, #e0e0e0, #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#e0e0e0', endColorstr='#ffffff)');
+	border:1px solid #ccc;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="file"],
+textarea, 
+select {
+	font:inherit;
+	font-weight: 400;
+	border: 1px solid #ccc; 
+	padding: 10px; 
+	background: #fff; 
+	border-radius: 5px; 
+	box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.12); 
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+	border: 1px solid #999; 
+	color: #999; 
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.32); 
+}
+
+select {
+	appearance: button;
+	-moz-appearance: button;
+	-webkit-appearance: button;
+	background-color: #f6f6f6;
+	background:linear-gradient(to bottom, #fafafa, #e5e5e5);
+	background:-webkit-linear-gradient(top, #fafafa, #e5e5e5);
+	background:-moz-linear-gradient(center 1px, #fafafa, #e5e5e5);
+	background:-ms-linear-gradient(top, #fafafa, #e5e5e5);
+	background:-o-linear-gradient(top, #fafafa, #e5e5e5);	
+}
+
+.search {
+	position: relative;
+}
+
+.search input {
+	padding-right: 31%;
+}
+
+.search button {
+	width: 30%;
+	position: absolute;
+	right: 0;
+}
+
+/* @Styles for Small Desktop sizes (until 1200px) */
+@media only screen and (min-width:960px) and (max-width:1200px) {}
+
+/* @Styles for Tablet Portrait */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* @Styles for Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* @Styles for Mobile Portrait */
+@media only screen and (max-width: 479px) {}
+
+/* @Print Styles */
+@media print {}
+
+/* @Selection */
+::selection { 
+	color: #fff; 
+	background: #333; 
+}
+::-webkit-selection { 
+	color: #fff; 
+	background: #333; 
+}
+::-moz-selection { 
+	color: #fff; 
+	background: #333; 
+}

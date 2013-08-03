@@ -1,0 +1,79 @@
+// Variables
+// --------------------------------------------------
+@fullSize: 100%;
+
+@m10: 10px;
+@m20: 20px;
+@m40: 40px;
+
+// Colors
+// -------------------------
+
+// Typography
+// -------------------------
+@mainFontSize: 14px;
+
+@cmSizeA: 0.5cm;
+
+@fontSizeA: 0.5em;
+@fontSizeB: 0.7em;
+@fontSizeC: 0.75em;
+@fontSizeD: 0.85em;
+@fontSizeE: 1em;
+@fontSizeF: 1.28em;
+@fontSizeG: 1.3em;
+@fontSizeH: 1.42em;
+@fontSizeI: 1.5em;
+@fontSizeJ: 2em;
+@fontSizeK: 3em;
+
+// Grid
+// -------------------------
+@wrapper: 1200px;
+@mobile: 480px;
+
+@col1:  6.5%;
+@col2:  15%;
+@col3:  23.5%;
+@col4:  32%;
+@col5:  40.5%;
+@col6:  49%;
+@col7:  57.5%;
+@col8:  66%;
+@col9:  74.5%;
+@col10: 83%;
+@col11: 91.5%;
+@col12: 100%;
+
+// Mixins
+// -------------------------
+
+// Resets
+.main-reset (@val: 0, @boxsiz: border-box) {
+  margin: @val; 
+  padding: @val; 
+  border: @val; 
+  -moz-box-sizing: @boxsiz;
+  box-sizing: @boxsiz;
+}
+
+.input-search (@txt: textfield, @sizing: content-box) {
+    -webkit-appearance: @txt;
+    -moz-box-sizing: @sizing;
+    -webkit-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+//Grid
+.main-wrapper (@w: 95%) {
+  width: @w;
+  max-width: @wrapper; 
+  margin: 0 auto; 
+  position: relative;
+}
+
+.set-cols (@r: 2%, @b: 2%){
+  float: left; 
+  display: block; 
+  margin: 0 @r @b 0; 	
+}
