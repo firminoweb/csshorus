@@ -4,10 +4,10 @@
 
 * Author:    João Firmino 
 * Since:     7 September, 2012
-* Last mod:  03 August, 2013
+* Last mod:  3 August, 2013
 * Version:   2.0.0
 * Website:   <http://csshor.us>
-* Twitter:   <https://twitter.com/firminoweb>
+* Twitter:   <http://twitter.com/firminoweb>
 
 * Old version (1.0.3): <https://github.com/firminoweb/csshorus/tree/csshorus-1.0.3>
 
