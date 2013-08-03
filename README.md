@@ -3,15 +3,15 @@
 ==========================================
 
 * Author:    João Firmino 
-* Since: 7 September, 2012
-* Last mod.: 03 August, 2013
+* Since:     7 September, 2012
+* Last mod:  03 August, 2013
 * Version:   2.0.0
 * Website:   <http://csshor.us>
 * Twitter:   <https://twitter.com/firminoweb>
 
 * Old version (1.0.3): <https://github.com/firminoweb/csshorus/tree/csshorus-1.0.3>
 
-CSSHórus is a CSS library for easy and fast development of responsive and mobile websites. It contains 12 grid columns and basic style formats (Reset, Print, Grid, Misc styles) and now with 'Skins' stylizing (Typography, Lists, Links, Table, Form, Buttons) for your web project, also with RTL and LESS CSS.
+CSSHórus is a library for easy and fast development of responsive and mobile websites. It contains 12 grid columns and basic style formats (Reset, Print, Grid, Misc styles) and now with 'Skins' stylizing (Typography, Lists, Links, Table, Form, Buttons) for your web project, also with RTL and LESS CSS.
 
 Features
 --------
