@@ -1,0 +1,197 @@
+/* MISCS **********
+*
+* CSS Hórus V2.0.0
+* http://csshor.us
+* Last mod: 03/08/2013
+*
+* Copyright 2013, João Firmino
+* http://twitter.com/firminoweb
+* https://github.com/firminoweb
+*
+*/
+/* Aligns & Formats */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.center {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+img.aligncenter {
+  margin: 0 auto 20px;
+}
+.circle {
+  border-radius: 50%;
+}
+.st:first-letter {
+  font-size: 200%;
+}
+/* Margin and Paddings */
+.m10 {
+  margin: 10px;
+}
+.m20 {
+  margin: 20px;
+}
+.m40 {
+  margin: 40px;
+}
+.m10-top {
+  margin-top: 10px;
+}
+.m20-top {
+  margin-top: 20px;
+}
+.m40-top {
+  margin-top: 40px;
+}
+.m10-right {
+  margin-right: 10px;
+}
+.m20-right {
+  margin-right: 20px;
+}
+.m40-right {
+  margin-right: 40px;
+}
+.m10-bottom {
+  margin-bottom: 10px;
+}
+.m20-bottom {
+  margin-bottom: 20px;
+}
+.m40-bottom {
+  margin-bottom: 40px;
+}
+.m10-left {
+  margin-left: 10px;
+}
+.m20-left {
+  margin-left: 20px;
+}
+.m40-left {
+  margin-left: 40px;
+}
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.p40 {
+  padding: 40px;
+}
+.p10-top {
+  padding-top: 10px;
+}
+.p20-top {
+  padding-top: 20px;
+}
+.p40-top {
+  padding-top: 40px;
+}
+.p10-right {
+  padding-right: 10px;
+}
+.p20-right {
+  padding-right: 20px;
+}
+.p40-right {
+  padding-right: 40px;
+}
+.p10-bottom {
+  padding-bottom: 10px;
+}
+.p20-bottom {
+  padding-bottom: 20px;
+}
+.p40-bottom {
+  padding-bottom: 40px;
+}
+.p10-left {
+  padding-left: 10px;
+}
+.p20-left {
+  padding-left: 20px;
+}
+.p40-left {
+  padding-left: 40px;
+}
+/* Table */
+.table {
+  width: 100%;
+  margin: 0 0 20px;
+}
+caption {
+  padding: 0.7em;
+  background: transparent;
+}
+.table th,
+.table td {
+  line-height: 1.28em;
+  padding: 0.7em;
+  text-align: left;
+}
+.table td {
+  border-top: 1px solid;
+}
+.cleanline td {
+  border-top: 0;
+}
+.bordered {
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+}
+.bordered th,
+.bordered td {
+  border-right: 1px solid;
+}
+.striped tbody tr:nth-child(odd) td,
+.striped tbody tr:nth-child(odd) th {
+  background: transparent;
+}
+/* Responsive embedded videos */
+.videoWrap {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+}
+.videoWrap iframe,
+.videoWrap object,
+.videoWrap embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Others */
+.hidden {
+  display: none !important;
+}
+.hidden-text {
+  font: 0/0 a !important;
+}
+.clear {
+  clear: both;
+  display: block;
+}
+.breadcrumbs li,
+.pagination li {
+  display: inline-block;
+  font-size: 0.85;
+}

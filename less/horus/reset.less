@@ -1,0 +1,266 @@
+/* RESET **********
+*
+* CSS Hórus V2.0.0
+* http://csshor.us
+* Last mod: 03/08/2013
+*
+* Copyright 2013, João Firmino
+* http://twitter.com/firminoweb
+* https://github.com/firminoweb
+*
+*/
+
+@import "../Vars.less";
+
+/* Basic Resets */
+*,
+*:before,
+*:after {
+  .main-reset;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+main, 
+nav, 
+section, 
+summary {
+  display: block;
+}
+
+html {
+    -ms-text-size-adjust: @fullSize;
+    -webkit-text-size-adjust: @fullSize;
+}
+
+body {
+    font: @mainFontSize "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  &:focus {
+    outline: thin dotted;    
+  }
+  &:active,
+  &:hover {
+    outline: 0;    
+  }
+}
+
+[hidden] {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6 {
+    line-height: @fontSizeE;
+    margin-bottom: @fontSizeA; 
+    word-wrap: break-word; 
+}
+
+h1 { 
+    font-size: @fontSizeK;
+}
+
+h2 { 
+    font-size: @fontSizeJ;
+}
+
+h3 { 
+    font-size: @fontSizeI;
+}
+
+h4 { 
+    font-size: @fontSizeG;
+}
+
+h5 { 
+    font-size: @fontSizeE;
+}
+
+h6 { 
+	 font-size: @fontSizeD; 
+}
+
+p { 
+    line-height: @fontSizeF;
+    margin-bottom: @fontSizeH;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote, blockquote p { 
+    font-size: @fontSizeF; 
+    font-style: italic; 
+}
+
+blockquote { 
+    margin: 0 0 @fontSizeH; 
+    padding: 0 @fontSizeH; 
+    border-left: 4px solid; 
+}
+
+cite { 
+    font-size: @fontSizeC; 
+}
+
+blockquote cite:before { 
+    content: "\2014 \00A0"; 
+}
+
+abbr[title] { 
+    cursor: help; 
+    border-bottom: 1px dotted; 
+}
+
+address {
+  font-size: @fontSizeD;
+}
+
+hr {
+    border-top: 1px solid;
+    clear: both;
+    height: 1px;
+}
+
+code, 
+kbd, 
+pre, 
+samp {
+    font-family: monospace, serif;
+    font-size: @fontSizeE;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;   
+}
+
+/* Embedded Resets */
+audio, 
+canvas, 
+video { 
+    display:inline-block; 
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+video {
+  width: @fullSize;
+  height: auto;
+} 
+
+svg:not(:root) { 
+    overflow: hidden;
+}
+
+/* Lists Resets */
+ul, 
+ol { 
+  margin: 0 0 @fontSizeH 0; 
+}
+
+ul { 
+  list-style: none inside; 
+}
+
+ol { 
+  list-style: decimal inside; 
+}
+
+.disc { 
+  list-style-type: disc; 
+}
+
+.circle { 
+  list-style-type: circle; 
+}
+
+li {
+  line-height: @fontSizeE;
+  margin-bottom: @fontSizeB; 
+}
+
+ul ul, 
+ol ol {
+  margin: @fontSizeB 0 0 @fontSizeH;
+}
+
+/* Form Resets */
+fieldset {
+    position: relative;  
+    padding-top: @fontSizeC;
+    margin-bottom: @fontSizeC;
+}
+
+button, 
+input, 
+select, 
+textarea {
+    font-family: inherit;
+    font-size: @fullSize;
+    vertical-align: middle;
+}
+
+button, 
+input {
+    line-height: normal;
+}
+
+button, 
+select {
+    text-transform: none;
+}
+
+button, html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], 
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="search"] {
+    .input-search;
+}
+
+input[type="search"]::-webkit-search-cancel-button, 
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize:none;
+    overflow: auto;
+    vertical-align: top;
+}
+
+/* Table Resets */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th { 
+  font-weight: 700; 
+}
