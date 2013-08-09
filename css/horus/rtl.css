@@ -2,13 +2,16 @@
 *
 * CSS Hórus V2.0.0
 * http://csshor.us
-* Last mod: 03/08/2013
+* Last mod: 09/08/2013
 *
 * Copyright 2013, João Firmino
 * http://twitter.com/firminoweb
 * https://github.com/firminoweb
 *
 */
+html {
+  direction:rtl;
+}
 .fl {
   float: right;
 }
