@@ -149,7 +149,7 @@ input[type="reset"],
 input[type="button"] {
   font: inherit;
   display: inline-block;
-  padding: 9px 12px;
+  padding: 10px 12px;
   color: #666;
   text-decoration: none;
   cursor: pointer;
@@ -221,6 +221,7 @@ select {
 .search button {
   width: 30%;
   position: absolute;
+  top: 0;
   right: 0;
 }
 /* @Styles for Small Desktop sizes (until 1200px) */

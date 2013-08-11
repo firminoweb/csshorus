@@ -105,6 +105,18 @@
   .hidden-mobile {
     display: none;
   }
+  table, 
+  thead, 
+  tbody, 
+  th, 
+  td, 
+  tr, 
+  caption { 
+    display: block;
+  }  
+  thead tr {
+    display: none;
+  }
 }
 .row {
   margin-bottom: 1.42em;
