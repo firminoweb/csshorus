@@ -1,6 +1,6 @@
 /* RTL ************
 *
-* CSS Hórus V2.0.0
+* CSS Hórus V2.0.1
 * http://csshor.us
 * Last mod: 09/08/2013
 *
@@ -9,44 +9,55 @@
 * https://github.com/firminoweb
 *
 */
+
 html {
-  direction:rtl;
+  direction: rtl;
 }
+
 .fl {
   float: right;
 }
+
 .fr {
   float: left;
 }
+
 img.alignleft {
   float: right;
   margin: 5px 0 20px 20px;
 }
+
 img.alignright {
   float: left;
   margin: 5px 20px 20px 0;
 }
+
 blockquote {
   border-left-width: 0;
   border-right: 4px solid;
 }
+
 code,
 pre {
   direction: ltr;
 }
+
 ul ul,
 ol ol {
   margin: 10px 20px 0 0;
 }
+
 caption,
 th,
 td {
   text-align: right;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   unicode-bidi: embed;
 }
+
 .col1,
 .col2,
 .col3,
@@ -66,6 +77,7 @@ input[type="checkbox"] {
   float: right;
   margin: 0 0 2% 2%;
 }
+
 .last {
   margin-left: 0;
 }

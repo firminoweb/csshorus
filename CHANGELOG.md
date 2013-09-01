@@ -1,4 +1,7 @@
-## v2.0.0
+## v2.0.1 (01/09/2013)
+- *Organization in modules*
+
+## v2.0.0 (03/08/2013)
 - *Initial release*
 
 ## v1.0.3

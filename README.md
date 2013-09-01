@@ -1,11 +1,11 @@
-<h1>CSSHórus v2.0.0</h1>
+<h1>CSSHórus 2.0</h1>
 <h3>CSS Library for responsive and mobile websites</h3>
 ==========================================
 
 * Author:    João Firmino 
 * Since:     7 September, 2012
-* Last mod:  3 August, 2013
-* Version:   2.0.0
+* Last mod:  1 September, 2013
+* Version:   2.0.1
 * Website:   <http://csshor.us>
 * Twitter:   <http://twitter.com/firminoweb>
 
