@@ -1,3 +1,6 @@
+## v2.1.0
+- *Minify CSS's and LESS, restructuring pattern columns and left support IE8*
+
 ## v2.0.1 (01/09/2013)
 - *Organization in modules*
 

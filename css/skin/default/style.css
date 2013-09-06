@@ -1,8 +1,8 @@
 /* Default skin style ***********
 *
-* CSS Hórus V2.0.1
+* CSSHórus V2.1.0
 * http://csshor.us
-* Last mod: 03/08/2013
+* Last mod: 06/09/2013
 *
 * Copyright 2013, João Firmino
 * http://twitter.com/firminoweb
@@ -25,7 +25,7 @@ a:hover {
   text-decoration: none;
 }
 /* Grid example style */
-#grid div {
+.grids [class*="col-"] {
   background: #eee;
   padding: 10px;
 }

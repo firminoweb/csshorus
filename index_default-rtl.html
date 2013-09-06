@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     
-  <title>CSSHórus - v2.0.0</title>
+  <title>CSSHórus - v2.1.0</title>
     
   <!--======= Basic Metas =======-->
 	<meta charset="utf-8">
@@ -14,36 +14,36 @@
 
 	<!--======= Mobile Metas =======-->
   <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0;">
     
 	<!--======= Favicons =======-->
     
   <!-- website favicon -->
-  <link rel="shortcut icon" href="_img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png">
   <!-- iPhone, iPod Touch -->
-  <link rel="apple-touch-icon" href="_img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <!-- iPhone with Retina display -->
-  <link rel="apple-touch-icon" sizes="114x114" href="_img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
   <!-- iPad first and second generation -->
-  <link rel="apple-touch-icon" sizes="72x72" href="_img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <!-- iPad with Retina display -->
-  <link rel="apple-touch-icon" sizes="144x144" href="_img/apple-touch-icon-144x144.png">    
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">    
     
   <!--======= CSS =======-->
     
   <!-- CSSHórus Library -->
-	<link rel="stylesheet" type="text/css" href="_css/horus.css">
+	<link rel="stylesheet" type="text/css" href="css/horus.css">
   <!-- RTL features -->    
-  <link rel="stylesheet" type="text/css" href="_css/rtl.css">
+  <link rel="stylesheet" type="text/css" href="css/rtl.css">
   <!-- Skin Styles -->
-	<link rel="stylesheet" type="text/css" href="_css/_skin/default/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skin/default/style.css">
 
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->  
 
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-<![endif]-->
+  <![endif]-->
 
 </head>
 
@@ -51,147 +51,175 @@
 
   <div class="wrapper">
     
-    <header class="col12">
+    <header class="row">
       <h1 class="m20-top">CSSHórus</h1>
-      <p>Version 2.0.0</p>
+      <p>Version 2.1.0</p>
       <hr>
     </header>
  
-        <section class="col12" id="intro">
-              <h2>CSS framework for easy and fast development of responsive and mobile websites.</h2>   
+        <section class="row" id="intro">
+              <h2>CSS library for easy and fast development of responsive and mobile websites.</h2>   
               <hr>    
         </section>      
         
-        <section class="col12" id="grid">
+        <section class="row grids" id="grid">
             
            <header class="row"> 
              <h2>Grid</h2>
              <h5>Designing adaptive websites using grid system with 12 columns for desktop, tablet and mobile.</h5>
            </header>    
-   
-              <div class="col1">
+          
+           <div class="row">
+              <div class="col-1">
                   <span class="hidden-mobile">.col1</span>   
               </div>
               
-              <div class="col11 last">
+              <div class="col-11">
                   <span>.col11</span>   
               </div>
-  
-              <div class="col2">
-                  <span>.col2</span>   
-              </div>
-              
-              <div class="col10 last">
-                  <span>.col10</span>   
-              </div> 
-              
-              <div class="col3">
-                  <span>.col3</span>   
-              </div>
-              
-              <div class="col9 last">
-                  <span>.col9</span>   
-              </div> 
-
-              <div class="col4">
-                  <span>.col4</span>   
-              </div>
-              
-              <div class="col8 last">
-                  <span>.col8</span>   
-              </div> 
+           </div>   
            
-              <div class="col5">
+           <div class="row">
+              <div class="col-2">
+                  <span>.col2</span>   
+              </div>
+              
+              <div class="col-10">
+                  <span>.col10</span>   
+              </div>
+           </div>
+
+           <div class="row"> 
+              <div class="col-3">
+                  <span>.col3</span>   
+              </div>
+              
+              <div class="col-9">
+                  <span>.col9</span>   
+              </div>
+           </div>   
+           
+           <div class="row">
+              <div class="col-4">
+                  <span>.col4</span>   
+              </div>
+              
+              <div class="col-8">
+                  <span>.col8</span>   
+              </div>
+           </div>   
+           
+           <div class="row">
+              <div class="col-5">
                   <span>.col5</span>   
               </div>
               
-              <div class="col7 last">
+              <div class="col-7">
                   <span>.col7</span>   
               </div>
-             
-              <div class="col6">
+           </div>   
+           
+           <div class="row">
+              <div class="col-6">
                   <span>.col6</span>   
               </div>
               
-              <div class="col6 last">
+              <div class="col-6">
                   <span>.col6</span>   
               </div>
-              
-              <div class="col7">
+           </div>
+           
+           <div class="row">
+              <div class="col-7">
                   <span>.col7</span>   
               </div>
               
-              <div class="col5 last">
+              <div class="col-5">
                   <span>.col5</span>   
               </div>
-             
-              <div class="col8">
+           </div>
+
+           <div class="row">  
+              <div class="col-8">
                   <span>.col8</span>   
               </div>
               
-              <div class="col4 last">
+              <div class="col-4">
                   <span>.col4</span>   
               </div>
-            
-              <div class="col9">
+           </div>   
+           
+           <div class="row"> 
+              <div class="col-9">
                   <span>.col9</span>   
               </div>
               
-              <div class="col3 last">
+              <div class="col-3">
                   <span>.col3</span>   
-              </div> 
-                                                                          
-              <div class="col10">
+              </div>
+           </div>   
+           
+           <div class="row">                                                               
+              <div class="col-10">
                   <span>.col10</span>   
               </div>
               
-              <div class="col2 last">
+              <div class="col-2">
                   <span>.col2</span>   
               </div>
-               
-              <div class="col11">
+           </div>
+           
+           <div class="row">    
+              <div class="col-11">
                   <span>.col11</span>   
               </div>
               
-              <div class="col1 last">
+              <div class="col-1">
                   <span>.col1</span>   
-              </div> 
-
-              <div class="col12">
+              </div>
+           </div>   
+           
+           <div class="row">
+              <div class="col-12">
                   <span>.col12</span>   
               </div>
-
-              <div class="col3">
+           </div>   
+           
+           <div class="row">
+              <div class="col-3">
                   <span>.col3</span>   
               </div>  
 
-              <div class="col3">
+              <div class="col-3">
                   <span>.col3</span>   
               </div>  
 
-              <div class="col3">
+              <div class="col-3">
                   <span>.col3</span>   
               </div>  
 
-              <div class="col3 last">
+              <div class="col-3">
                   <span>.col3</span>   
               </div>
-
-              <div class="col4">
+           </div>
+              
+           <div class="row">
+              <div class="col-4">
                   <span>.col4</span>   
               </div>  
 
-              <div class="col4">
+              <div class="col-4">
                   <span>.col4</span>   
               </div>  
 
-              <div class="col4 last">
+              <div class="col-4">
                   <span>.col4</span>   
-              </div>                                                                                    
+              </div>
+           </div>                                                                                    
             
         </section> 
         
-        <section class="col12" id="fonts_form">
+        <section class="row" id="fonts_form">
             
            <header class="row"> 
              <h2>All Basic Styles</h2>
@@ -201,7 +229,7 @@
            </header> 
            
            <div class="row">
-             <div class="col5">
+             <div class="col-5">
              
                 <h1>&lt;h1&gt;Heading&lt;/h1&gt;</h1>
                 <h2>&lt;h2&gt;Heading&lt;/h2&gt;</h2>
@@ -214,7 +242,7 @@
                 
                 <address>
                    <strong>&lt;address&gt;, inc</strong> <br>
-                   Paulista Avenue, Santana, Bela Vista <br>
+                   Paulista Avenue, Bela Vista <br>
                    São Paulo, SP - Brazil <br>
                    <abbr title="Telephone">Tel.</abbr> +55 (11) 99999-9999 <br>
                    <abbr title="E-mail Address">E-.</abbr> <a href="mailto:mail@mailme.com">mail@mailme.com</a>
@@ -225,7 +253,7 @@
                 
              </div>
              
-             <div class="col5">
+             <div class="col-5">
                  
                  <blockquote>
                  <strong>&lt;blockquote&gt;</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <cite>João Firmino</cite>
@@ -247,7 +275,7 @@
                  
              </div>
              
-             <div class="col2 last">
+             <div class="col-2">
               
                  <h3>Ordered list</h3>
                  
@@ -278,13 +306,13 @@
                  </ul>                                                                      
                  
              </div>
-
-             <hr>
              
            </div>
+
+           <hr class="row">
            
            <div class="row">  
-             <div class="col8">
+             <div class="col-8">
              
                  <h3>Breadcrumbs</h3>
                  
@@ -320,7 +348,7 @@
              
              </div>
              
-             <div class="col4 last">
+             <div class="col-4">
 
                  <h3>Ordered sub-list</h3>
                  
@@ -350,7 +378,7 @@
            
            <div class="row">
              
-             <div class="col8">
+             <div class="col-8">
                           
                  <table class="table">
                    <caption>Default Table</caption>
@@ -518,7 +546,7 @@
                  
              </div>
              
-             <div class="col4 last">
+             <div class="col-4">
                          
                   <form>
 
@@ -577,7 +605,7 @@
            
         </section> 
         
-        <section class="col12" id="blog">
+        <section class="row" id="blog">
         
            <header class="row"> 
              <h2>Post example</h2>
@@ -586,7 +614,7 @@
              <hr class="margintop">
            </header>
            
-           <article class="col9">
+           <article class="col-9">
               
               <header class="row">
                  <h1>Post title example</h1>
@@ -595,7 +623,7 @@
               </header>
               
               <img src="img/apple-touch-icon-144x144.png" width="144" height="144" alt="icon" title="hórus apple icon" class="alignleft">
-              
+
               <p>Lorem ipsum dolor sit amet, <big>consectetur</big> <small>adipiscing elit</small>. Duis aliquam <strong>ligula</strong> id diam tempus ac <strong><em>adipiscing</em></strong> ligula condimentum. Nullam accumsan erat nec risus dictum a porttitor est consectetur. Maecenas eget posuere est. Fusce mattis blandit semper. Phasellus nec est lorem, venenatis tempor est. Donec ac metus id massa pulvinar suscipit volutpat id nibh. In porttitor tristique mauris quis euismod. Vestibulum at consectetur tellus. Morbi leo dolor, interdum quis sagittis et, vulputate <sub>vitae</sub> lectus. Proin <sup>dui</sup> dui, gravida ac ullamcorper vitae, adipiscing id odio.</p>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam ligula id diam tempus ac adipiscing ligula condimentum. Nullam accumsan erat nec risus dictum a porttitor est consectetur. Maecenas eget posuere est. Fusce mattis blandit semper. Phasellus nec est lorem, venenatis tempor est. Donec ac metus id massa pulvinar suscipit volutpat id nibh. In porttitor tristique mauris quis euismod. Vestibulum at consectetur tellus. Morbi leo dolor, interdum quis sagittis et, vulputate vitae lectus.</p>
@@ -608,7 +636,7 @@
                             
            </article>
            
-           <aside class="col3 last">
+           <aside class="col-3">
            
                <form id="searchform" class="search row">
                   <input type="text" name="s" id="s"> <button type="submit">Search</button>
@@ -646,7 +674,7 @@
         
         </section>         
         
-        <footer class="col12">
+        <footer class="row">
             <hr class="m20-bottom">
             <h6>copyright 2013 - <a href="http://twitter.com/firminoweb" title="Firmino Web Developer" target="_blank">João Firmino</a></h6>
         </footer>
