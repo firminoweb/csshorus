@@ -1,0 +1,27 @@
+{
+  "name": "CSSHorus",
+  "version": "2.1.0",
+  "homepage": "http://csshor.us",
+  "authors": [
+    "Joao Firmino <firminoata@gmail.com>"
+  ],
+  "description": "CSSHórus is a library for easy and fast development of responsive and mobile websites. It contains 12 grid columns and basic style formats (Reset, Print, Grid, Misc styles) and now with 'Skins' stylizing (Typography, Lists, Links, Table, Form, Buttons) for your web project, also with RTL and LESS CSS.",
+  "main": "horus.css",
+  "keywords": [
+    "html",
+    "html5",
+    "css",
+    "css3",
+    "responsive",
+    "mobile",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

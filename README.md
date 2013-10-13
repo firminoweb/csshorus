@@ -1,10 +1,10 @@
-<h1>CSSHórus 2.0</h1>
+<h1>CSSHórus</h1>
 <h3>CSS Library for responsive and mobile websites</h3>
 ==========================================
 
 * Author:    João Firmino 
 * Since:     7 September, 2012
-* Last mod:  6 September, 2013
+* Last mod:  13 October, 2013
 * Version:   2.1.0
 * Website:   <http://csshor.us>
 * Twitter:   <http://twitter.com/firminoweb>
@@ -26,3 +26,19 @@ Features
 * RTL
 * Skin styles
 * Build with LESS CSS
+
+Bower package
+-------------
+
+Bower depends on [Node](http://nodejs.org/) and [npm](http://npmjs.org/). It's
+installed globally using npm:
+
+```
+npm install -g bower
+```
+
+Installing the package in your project folder:
+
+```
+bower install csshorus
+```
