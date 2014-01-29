@@ -42,3 +42,4 @@ Installing the package in your project folder:
 ```
 bower install csshorus
 ```
+...
